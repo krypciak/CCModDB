@@ -1,0 +1,32 @@
+name: Fill CCBot PR info
+on:
+    pull_request:
+        types: [opened]
+
+jobs:
+    completePR:
+        name: Fill CCBot PR info
+        if: startsWith(github.event.pull_request.title, 'CCBot:')
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 20.x
+            - working-directory: build/
+              run: npm ci
+            - name: Update the database
+              working-directory: build/
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: npm run start
+            - name: Commit changes
+              run: |
+                  git config --global user.email "${GITHUB_ACTOR_EMAIL}"
+                  git config --global user.name "${GITHUB_ACTOR}"
+                  git add -A
+                  git commit -m "Fill pr info"
+                  git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+                  git push
+
