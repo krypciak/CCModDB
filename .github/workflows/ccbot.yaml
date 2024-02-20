@@ -1,0 +1,45 @@
+name: Fill CCBot PR info
+on:
+    pull_request:
+        types: [opened]
+
+jobs:
+    completePR:
+        name: Fill CCBot PR info
+        if: startsWith(github.event.pull_request.title, 'CCBot:')
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 20.x
+            - working-directory: build/
+              run: npm ci
+            - name: Update the database
+              working-directory: build/
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  OUT="$(npm run start)"
+                  echo "$OUT"
+                  OUT="$(echo "$OUT" | tail -1)"
+                  echo "$OUT"
+                  ID="$(echo "$OUT" | awk -F'|' '{print $1}')"
+                  VERSION="$(echo "$OUT" | awk -F'|' '{print $2}')"
+                  TITLE="$(echo "$OUT" | awk -F'|' '{print $3}')"
+                  DESCRIPTION="$(echo "$OUT" | awk -F'|' '{print $4}')"
+
+                  git config --global user.email "${GITHUB_ACTOR_EMAIL}"
+                  git config --global user.name "${GITHUB_ACTOR}"
+                  git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+                  git commit --all -m "CCBot: Fill '${ID}' info"
+                  git push
+
+                  gh pr edit "${{ github.event.pull_request.number }}" --title "CCBot: ${ID}" --body "Mod info:<br>${ID} v${VERSION}<br>${DESCRIPTION}"
+
+            - name: Test
+              run: |
+                  npm run test
