@@ -447,6 +447,27 @@
         "stars": 1,
         "lastUpdateTimestamp": 1709375076000
     },
+    "ccmodmanager": {
+        "metadataCCMod": {
+            "id": "ccmodmanager",
+            "version": "0.9.1",
+            "title": "CCModManager",
+            "description": "mod manager",
+            "plugin": "plugin.js",
+            "icons": {
+                "24": "icon/icon.png"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.1/ccmodmanager-0.9.1.ccmod",
+                "hash": {
+                    "sha256": "08f374efb080f0cba706560b18b942a3ebf59ca16e9a413899758886522900c5"
+                }
+            }
+        ]
+    },
     "charged-balls": {
         "metadataCCMod": {
             "id": "charged-balls",
