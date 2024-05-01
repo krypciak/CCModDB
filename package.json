@@ -7,7 +7,7 @@
         "build": "tsc",
         "watch": "tsc -w",
         "start": "npm run build && npx node build/dist/src/main.js",
-        "test": "npm run build && mocha --parallel --recursive build/tests/",
+        "test": "npm run build && PARENT_DB_DATA=\"$(git show master:npDatabase.json | jq --compact-output)\" npx mocha --parallel --recursive build/tests/",
         "format": "prettier ./build/src -w"
     },
     "repository": {
