@@ -7,10 +7,19 @@ import semver from 'semver';
 import crypto from 'crypto';
 import {download, streamToBuffer} from '../dist/src/download.js';
 
+/**
+ * parsed npDatabase.json into JSON
+ */
+let jsonData
+/**
+ * parsed parent npDatabase.json into JSON
+ */
+let parentJsonData
+
 describe('NpDatabase', () => {
 
 	const FILE_PATH = './npDatabase.json';
-	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
+	jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
 	it('Check json structure', () => {
 		expect(typeof jsonData === 'object',
@@ -21,9 +30,14 @@ describe('NpDatabase', () => {
 			'Json not valid: Not an object').to.be.true;
 	});
 
+	const parentJsonString = process.env['PARENT_DB_DATA']
+	if (parentJsonString) {
+		parentJsonData = JSON.parse(parentJsonString)
+	}
+
 	describe('mods', () => {
 		for (let mod of Object.keys(jsonData)) {
-			testPackage(jsonData, jsonData[mod], mod);
+			testPackage(jsonData[mod], mod);
 		}
 	});
 });
@@ -44,26 +58,18 @@ describe('ToolsDB', () => {
 
 	describe('tools', () => {
 		for (let mod of Object.keys(jsonData)) {
-			testPackage(jsonData, jsonData[mod], mod);
+			testPackage(jsonData[mod], mod);
 		}
 	});
 });
 
-export function testPackage(jsonData, mod, name) {
+export function testPackage(mod, name) {
 	describe(`Package: ${name}`, () => {
 		it('Check for required elements', () => {
 			expect(mod !== null,
 				'package must not be null').to.be.true;
 
-			// expect(typeof mod.metadata === 'object',
-			// 	'metadata (type: object) required').to.be.true;
-			// expect(Array.isArray(mod.metadata),
-			// 	'metadata (type: object) required').to.be.false;
-			// expect(mod.metadata !== null,
-			// 	'metadata (type: object) required').to.be.true;
-
             expect(mod.metadataCCMod !== undefined, 'metadataCCMod (type: object) required').to.be.true
-
 
 			expect(typeof mod.installation === 'object',
 				'installation (type: array) required').to.be.true;
@@ -73,95 +79,42 @@ export function testPackage(jsonData, mod, name) {
 				'installation (type: array) required').to.be.true;
 		});
 
-        if (mod) {
-		    if (mod.metadata) {
-		    	testMetadata(jsonData, mod.metadata);
-		    }
-            
-		    if (mod.metadataCCMod) {
-		    	testMetadataCCMod(jsonData, mod.metadataCCMod);
-		    }
+        if (!mod) return
 
-		    if (mod.installation) {
-		    	testInstallation(mod);
-		    }
-        }
+		if (mod.metadataCCMod) testMetadataCCMod(mod.metadataCCMod);
+		if (mod.installation) testInstallation(mod);
 	});
 }
 
-function testMetadata(jsonData, metadata) {
-	it('Test metadata', () => {
-		expect(typeof metadata.name === 'string',
-			'metadata.name (type: string) required').to.be.true;
+/**
+ * Mod dependencies to skip while checking if a mod has all it's dependencies in the database
+ */
+const skipTheseModDependencies = [
+	'crosscode',
+	'simplify',
+	// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
+	'fish-gear',
+	'flying-hedgehag',
+	'manlea',
+	'ninja-skin',
+	'post-game',
+	'scorpion-robo',
+	'snowman-tank',
+]
+/**
+ * Searches databases for a dependency by it's id and title
+ * @param {string} depName - Name of a dependency to look for
+ */
+function findDependency(depName) {
+	for (const db of [jsonData, parentJsonData].filter(Boolean)) {
+		if (db[depName]) return db[depName]
 
-		expect([undefined, 'mod', 'tool', 'base'].includes(metadata.ccmodType),
-			'metadata.ccmodType (type: string) must have one of: '
-			+ '[undefined, "mod", "tool", "base"]').to.be.true;
-
-		expect(metadata.version === undefined
-			|| semver.valid(metadata.version) !== null,
-		'metadata.version (type: string) must be undefined or valid semver')
-			.to.be.true;
-
-		expect(metadata.ccmodHumanName === undefined
-			|| typeof metadata.ccmodHumanName === 'string',
-		'metadata.ccmodHumanName (type: string) has wrong type').to.be.true;
-		expect(metadata.description === undefined
-			|| typeof metadata.description === 'string',
-		'metadata.description (type: string) has wrong type').to.be.true;
-		expect(metadata.license === undefined
-			|| typeof metadata.license === 'string',
-		'metadata.license (type: string) has wrong type').to.be.true;
-		expect(metadata.homepage === undefined
-			|| typeof metadata.homepage === 'string',
-		'metadata.homepage (type: string) has wrong type').to.be.true;
-	});
-
-	if (metadata.ccmodDependencies) {
-		it('Test check dependencies', () => {
-			expect(typeof metadata.ccmodDependencies === 'object',
-				'metadata.ccmodDependencies (type: object) must be an object')
-				.to.be.true;
-			expect(Array.isArray(metadata.ccmodDependencies),
-				'metadata.ccmodDependencies (type: object) must be an object')
-				.to.be.false;
-			expect(metadata.ccmodDependencies !== null,
-				'metadata.ccmodDependencies (type: object) must be an object')
-				.to.be.true;
-
-			for (const dep of Object.keys(metadata.ccmodDependencies)) {
-				expect(semver.validRange(metadata.ccmodDependencies[dep]),
-					`dependency ${dep} must be specify a valid range`)
-					.to.not.be.null;
-
-				if (
-					[
-						'crosscode',
-						'simplify',
-						// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
-						'fish-gear',
-						'flying-hedgehag',
-						'manlea',
-						'ninja-skin',
-						'post-game',
-						'scorpion-robo',
-						'snowman-tank',
-					].includes(dep.toLowerCase())) {
-					continue;
-				}
-
-				expect(jsonData[dep] || Object.values(jsonData).find(mod => mod.metadata && mod.metadata.name === dep),
-					`dependency ${dep} must be registered in CCModDb`)
-					.to.not.be.undefined;
-			}
-		});
-	} else {
-		expect(metadata.dependencies === undefined,
-			'metadata.dependencies must not be used').to.be.true;
+		const dep = Object.values(db).find(mod => mod.metadataCCMod.title == depName)
+		if (dep) return dep
 	}
 }
 
-function testMetadataCCMod(jsonData, ccmod) {
+function testMetadataCCMod(ccmod) {
 	it('Test ccmod.json', () => {
 		expect(typeof ccmod.id === 'string',
 			'ccmod.id (type: string) required').to.be.true;
@@ -211,23 +164,9 @@ function testMetadataCCMod(jsonData, ccmod) {
 					`dependency ${dep} must be specify a valid range`)
 					.to.not.be.null;
 
-				if (
-					[
-						'crosscode',
-						'simplify',
-						// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
-						'fish-gear',
-						'flying-hedgehag',
-						'manlea',
-						'ninja-skin',
-						'post-game',
-						'scorpion-robo',
-						'snowman-tank',
-					].includes(dep.toLowerCase())) {
-					continue;
-				}
+				if (skipTheseModDependencies.includes(dep.toLowerCase())) continue;
 
-				expect(jsonData[dep] || Object.values(jsonData).find(mod => mod.metadata && mod.metadata.name === dep),
+				expect(findDependency(dep),
 					`dependency ${dep} must be registered in CCModDb`)
 					.to.not.be.undefined;
 			}
