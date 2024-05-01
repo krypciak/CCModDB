@@ -12,7 +12,7 @@ jobs:
     completePR:
         name: Fill CCBot PR info
         runs-on: ubuntu-latest
-        if: startsWith(github.event.pull_request.title, 'CCBot:')
+        if: startsWith(github.event.pull_request.title, 'CCBot')
 
         steps:
             - uses: actions/checkout@v4
@@ -61,7 +61,7 @@ jobs:
                   git status
 
             - name: Push changes
-              uses: 'ad-m/github-push-action@master'
+              uses: 'ad-m/github-push-action@testing'
               with:
                   github_token: ${{ secrets.PAT }}
                   branch: ${{ github.head_ref }}
