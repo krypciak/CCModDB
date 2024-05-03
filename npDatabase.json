@@ -676,7 +676,7 @@
     "cc-vim": {
         "metadataCCMod": {
             "id": "cc-vim",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "title": "Vim Command Mode",
             "description": "Adds a popup command prompt",
             "repository": "https://github.com/krypciak/cc-vim",
@@ -696,14 +696,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.0/cc-vim-1.6.0.ccmod",
+                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.1/cc-vim-1.6.1.ccmod",
                 "hash": {
-                    "sha256": "6e4e2aa1959f45c0a268a72328fc5c9d25bf997f6f67b8f7400d45de6c9d9539"
+                    "sha256": "b47697b2ad43baa2f4ccb55c2bcb20a6f82043fdfe539646a8b87e85a8a98329"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1710884225000
+        "lastUpdateTimestamp": 1714761258000
     },
     "ccloader": {
         "metadataCCMod": {
