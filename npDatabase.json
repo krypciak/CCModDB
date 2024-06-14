@@ -709,6 +709,40 @@
         "stars": 0,
         "lastUpdateTimestamp": 1714119352000
     },
+    "cc-record": {
+        "metadataCCMod": {
+            "id": "cc-record",
+            "version": "1.0.2",
+            "title": "Record",
+            "description": "Record",
+            "repository": "https://github.com/krypciak/cc-record",
+            "tags": [
+                "QoL",
+                "library"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "crosscode": ">=1.4.0",
+                "input-api": ">=1.0.0",
+                "ccmodmanager": ">=0.9.13"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/cc-record/releases/download/v1.0.2/cc-record-1.0.2.ccmod",
+                "hash": {
+                    "sha256": "2ce6cb5498b0616c5135cb52e0638d899b421a989ec756b99e2f80d4efe81503"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1718310580000
+    },
     "cc-vim": {
         "metadataCCMod": {
             "id": "cc-vim",
