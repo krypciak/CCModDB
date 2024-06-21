@@ -2,7 +2,7 @@
     "cc-record": {
         "metadataCCMod": {
             "id": "cc-record",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "title": "Record",
             "description": "Record CrossCode gameplay. Records the CrossCode window and ALL desktop audio!",
             "repository": "https://github.com/krypciak/cc-record",
@@ -24,14 +24,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-record/releases/download/v1.0.3/cc-record-1.0.3.ccmod",
+                "url": "https://github.com/krypciak/cc-record/releases/download/v1.0.4/cc-record-1.0.4.ccmod",
                 "hash": {
-                    "sha256": "9b5f2e572303dc462602b8c23a7b5b5b603fe14afbb7691c1e2d22f85058a6ca"
+                    "sha256": "971e5311a049be1a70396c459bc1dfbedc60f48bdfc14b70f1573000e62525d8"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1718983374000
+        "lastUpdateTimestamp": 1718984309000
     },
     "crossedeyes": {
         "metadataCCMod": {
