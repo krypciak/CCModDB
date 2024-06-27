@@ -709,6 +709,40 @@
         "stars": 0,
         "lastUpdateTimestamp": 1714119352000
     },
+    "cc-record": {
+        "metadataCCMod": {
+            "id": "cc-record",
+            "version": "1.0.4",
+            "title": "Record",
+            "description": "Record CrossCode gameplay. Records the CrossCode window and ALL desktop audio!",
+            "repository": "https://github.com/krypciak/cc-record",
+            "tags": [
+                "QoL",
+                "library"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "crosscode": ">=1.4.0",
+                "input-api": ">=1.0.0",
+                "ccmodmanager": ">=0.9.13"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/cc-record/releases/download/v1.0.4/cc-record-1.0.4.ccmod",
+                "hash": {
+                    "sha256": "971e5311a049be1a70396c459bc1dfbedc60f48bdfc14b70f1573000e62525d8"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1718984309000
+    },
     "cc-vim": {
         "metadataCCMod": {
             "id": "cc-vim",
