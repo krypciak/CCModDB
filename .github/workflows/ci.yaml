@@ -1,0 +1,56 @@
+name: CI
+
+on:
+    push:
+    workflow_dispatch:
+
+jobs:
+    check_database:
+        name: Check database
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                ref: master-final
+
+            - uses: actions/checkout@v4
+
+            - run: |
+                git checkout master-final
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+                  cache: 'npm'
+
+            - run: npm ci
+            
+            - name: Get Date
+              id: get-date
+              run: |
+                echo "date=$(/bin/date -u "+%Y%m%d")" >> $GITHUB_OUTPUT
+
+            - name: Restore cached mod archives
+              uses: actions/cache/restore@v4
+              with:
+                path: |
+                  build/cache
+                key: mod-cache-${{ steps.get-date.outputs.date }}
+                restore-keys: |
+                  mod-cache-
+
+
+            - name: Test the database
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                export BRANCH="$GITHUB_REF"
+                npm run test
+                    
+            - name: Save mod archive cache
+              uses: actions/cache/save@v4
+              with:
+                path: |
+                  build/cache
+                key: mod-cache-${{ steps.get-date.outputs.date }}
