@@ -537,14 +537,14 @@
     "cc-extra-dialogue": {
         "metadataCCMod": {
             "id": "cc-extra-dialogue",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "title": "CrossCode Extra Dialogue",
             "description": "Adds more lore-friendly dialogue for party members.",
-            "repository": "https://github.com/Paradragon/cc-extra-dialogue",
+            "repository": "https://github.com/krypciak/cc-extra-dialogue",
             "tags": [
                 "QoL"
             ],
-            "authors": "Paradragon",
+            "authors": "anonymous",
             "icons": {
                 "24": "icon.png"
             },
@@ -553,14 +553,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-extra-dialogue/releases/download/v1.0.1/cc-extra-dialogue.ccmod",
+                "url": "https://github.com/krypciak/cc-extra-dialogue/releases/download/v1.0.2/cc-extra-dialogue.ccmod",
                 "hash": {
-                    "sha256": "851d2c3aafcf7dda646e6ee80da3c99588a60f6735f2b8a64abb17cea9f85f5d"
+                    "sha256": "a86d29a68960d9b71be1c47bcfea104ac050303f2a8d6bf21fa43f8336c122fd"
                 }
             }
         ],
-        "stars": 5,
-        "lastUpdateTimestamp": 1633371453000
+        "stars": 0,
+        "lastUpdateTimestamp": 1720793527000
     },
     "cc-fancy-crash": {
         "metadataCCMod": {
@@ -995,7 +995,7 @@
                 }
             }
         ],
-        "stars": 11,
+        "stars": 13,
         "lastUpdateTimestamp": 1647125834000
     },
     "crossedeyes": {
@@ -1609,7 +1609,7 @@
                 }
             }
         ],
-        "stars": 3,
+        "stars": 5,
         "lastUpdateTimestamp": 1709924111000
     },
     "nax-ccuilib": {
