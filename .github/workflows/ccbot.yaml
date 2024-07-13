@@ -67,8 +67,14 @@ jobs:
                   git add -A
                   git commit -m "CCBot: Fill '${ID}' info"
 
+
             - name: Push changes
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: |
-                  git push
+              uses: 'ad-m/github-push-action@master'
+              with:
+                  github_token: ${{ secrets.PAT }}
+                  branch: ${{ github.head_ref }}
+            # - name: Push changes
+            #   env:
+            #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            #   run: |
+            #       git push
