@@ -1479,12 +1479,12 @@
     "lqm-joern-mod": {
         "metadataCCMod": {
             "id": "lqm-joern-mod",
-            "version": "0.5.4",
+            "version": "0.5.72",
             "title": {
-                "en_US": "Lubkuluk's Joern and \\c[7]Quadroguard\\c[0] Mod \\i[party-BEHAVIOUR-1] (WIP)"
+                "en_US": "Lubkuluk's \\c[7]Quadroguard\\c[0] Mod \\i[party-BEHAVIOUR-1] \\c[1](WIP)"
             },
             "description": {
-                "en_US": "Modifies Joern in a way Lubkuluk desires. \\c[1]Is in early access, expect some bugs.\\c[0]"
+                "en_US": "Adds Playable Quadroguards and Custom PvP content. \\c[1]Is in early access, expect some bugs.\\c[0]"
             },
             "repository": "https://github.com/lubkuluk/lubkuluks-joern-mod",
             "tags": [
@@ -1492,7 +1492,8 @@
                 "party member"
             ],
             "authors": [
-                "lubkuluk"
+                "Lubkuluk",
+                "HeartLychee"
             ],
             "icons": {
                 "24": "icon.png"
@@ -1503,23 +1504,64 @@
             "prestart": "prestart.js",
             "poststart": "poststart.js",
             "dependencies": {
-                "extendable-severed-heads": "^1.1.0",
-                "unified-steps": "^0.1.0",
-                "xenons-triblader-mod": "^0.9.2"
+                "extendable-severed-heads": ">=1.1.0",
+                "xenons-triblader-mod": ">=0.9.2"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/files/14393459/lubkuluks-joern-mod.zip",
-                "source": "lubkuluks-joern-mod",
+                "url": "https://github.com/user-attachments/files/15534230/lubkuluks-quadroguard-mod.zip",
+                "source": "lubkuluks-quadroguard-mod",
                 "hash": {
-                    "sha256": "d3828f11fc7c70e104c040d03d2d2f8de017e4dff1e715eb77ac37bef7106c2e"
+                    "sha256": "cd66243fa421da6689aefd5d85ef406977daed0b22f2e2eae079abe8f6f0419e"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1712076955000
+        "lastUpdateTimestamp": 1712076955000,
+        "releasePages": [
+            {
+                "body": "[lubkuluks-quadroguard-mod.zip](https://github.com/user-attachments/files/15534230/lubkuluks-quadroguard-mod.zip)\r\n",
+                "version": "0.5.72",
+                "timestamp": 1712076955000
+            },
+            {
+                "body": "[lubkuluks-quadroguard-mod.zip](https://github.com/user-attachments/files/15532522/lubkuluks-quadroguard-mod.zip)\r\n",
+                "version": "0.5.71",
+                "timestamp": 1712076955000
+            },
+            {
+                "body": "",
+                "version": "0.5.70",
+                "timestamp": 1712076955000
+            },
+            {
+                "body": "[lubkuluks-quadroguard-mod.zip](https://github.com/lubkuluk/lubkuluks-joern-mod/files/15151951/lubkuluks-quadroguard-mod.zip)\r\n",
+                "version": "0.5.6",
+                "timestamp": 1712076955000
+            },
+            {
+                "body": "[lubkuluks-quadroguard-mod.zip](https://github.com/lubkuluk/lubkuluks-joern-mod/files/14841331/lubkuluks-quadroguard-mod.zip)\r\n",
+                "version": "0.5.5",
+                "timestamp": 1712076955000
+            },
+            {
+                "body": "[lubkuluks-joern-mod.zip](https://github.com/lubkuluk/lubkuluks-joern-mod/files/14393459/lubkuluks-joern-mod.zip)\r\n",
+                "version": "0.5.4",
+                "timestamp": 1707477054000
+            },
+            {
+                "body": "[lubkuluks-joern-mod.zip](https://github.com/lubkuluk/lubkuluks-joern-mod/files/14268063/lubkuluks-joern-mod.zip)\r\n\r\nPatch Notes can be found on the mod's Discord Server",
+                "version": "0.5.3.1",
+                "timestamp": 1707477054000
+            },
+            {
+                "body": "Fixed a bug that was causing error on start\r\n[lubkuluks-joern-mod.zip](https://github.com/lubkuluk/lubkuluks-joern-mod/files/14241243/lubkuluks-joern-mod.zip)\r\n",
+                "version": "0.5.3",
+                "timestamp": 1707476782000
+            }
+        ]
     },
     "map-watch": {
         "metadataCCMod": {
