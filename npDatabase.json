@@ -1642,7 +1642,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/conorlawton/nax-ccuilib",
@@ -1655,21 +1655,49 @@
                 "krypek"
             ],
             "dependencies": {
-                "nax-module-cache": ">=1.0.0"
+                "nax-module-cache": ">=1.0.0",
+                "ccmodmanager": ">=0.9.15"
             },
             "plugin": "nax-ccuilib/plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.2.7/nax-ccuilib.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.2.8/nax-ccuilib.ccmod",
                 "hash": {
-                    "sha256": "a5d2fba724a60caad1177a093367eaf7b939e924c201cdd1ba5df3b9bbbbf3f9"
+                    "sha256": "3dc561ea45c9be67ecf021692c84ac5c93742fff21fcd592d1820352f942efcc"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1710105771000
+        "lastUpdateTimestamp": 1710105771000,
+        "releasePages": [
+            {
+                "body": "## What's Changed\r\n* Add imageNoCache option to widget config & Add help button by @krypciak in https://github.com/conorlawton/nax-ccuilib/pull/8\r\n\r\n\r\n**Full Changelog**: https://github.com/conorlawton/nax-ccuilib/compare/v.1.2.3...v1.2.4",
+                "version": "1.2.4",
+                "timestamp": 1710106015000
+            },
+            {
+                "body": "",
+                "version": "v.1.2.3",
+                "timestamp": 1709313342000
+            },
+            {
+                "body": "Fixes #2 ",
+                "version": "1.2.2",
+                "timestamp": 1706800217000
+            },
+            {
+                "body": "",
+                "version": "1.2.1",
+                "timestamp": 1678814077000
+            },
+            {
+                "body": "",
+                "version": "1.2.0",
+                "timestamp": 1678810159000
+            }
+        ]
     },
     "nax-module-cache": {
         "metadataCCMod": {
