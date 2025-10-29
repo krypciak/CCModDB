@@ -43,7 +43,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.5.2",
+            "version": "0.5.3",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -67,15 +67,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.5.2/cc-multibakery-0.5.2.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.5.3/cc-multibakery-0.5.3.ccmod",
                 "hash": {
-                    "sha256": "55cc7e1040c9323a80e52080129e1b04e38fae847177e30c7a07a21341ce1549"
+                    "sha256": "36fd120f511fb6fa804e044e1fc802e58cbff53a7f42cf3a1c81e3fb205298e5"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1761739391000,
+        "lastUpdateTimestamp": 1761741867000,
         "releasePages": [
+            {
+                "body": "",
+                "version": "0.5.3",
+                "timestamp": 1761741868000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.5.3"
+            },
             {
                 "body": "",
                 "version": "0.5.2",
