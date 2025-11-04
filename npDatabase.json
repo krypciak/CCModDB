@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.0/cc-instanceinator-1.0.0.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.1/cc-instanceinator-1.0.1.ccmod",
                 "hash": {
-                    "sha256": "701b90b81f3c85918c0652aa3aa5e21ba6653ff07421e91ca1a947dfdb7ca184"
+                    "sha256": "110899f8254893f9e506eb88bc195faa56a02d1c735609f9390995417fe31852"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1759594091000,
+        "lastUpdateTimestamp": 1762290576000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix memory leaks\n- Improve nax-ccuilib compatibility",
+                "version": "1.0.1",
+                "timestamp": 1762290577000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.0.1"
+            },
             {
                 "body": "",
                 "version": "1.0.0",
