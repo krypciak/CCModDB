@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.3/cc-instanceinator-1.0.3.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.4/cc-instanceinator-1.0.4.ccmod",
                 "hash": {
-                    "sha256": "1ccd126003ffaf20bf3e5fc5330fb5b5a06fb457e13ec7ebf4933650b1c3fce9"
+                    "sha256": "8a5e3942b7ea063314803a21ea78380d26537f4aba27b888d91d4f072d10db23"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1763060108000,
+        "lastUpdateTimestamp": 1763145886000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add souldPlayCondition argument to instance constructor",
+                "version": "1.0.4",
+                "timestamp": 1763145886000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.0.4"
+            },
             {
                 "body": "### Fixed \n\n- Don't play sounds from hidden instances\n- Fix sc.PlayerConfig inter-instance coupling",
                 "version": "1.0.3",
@@ -61,7 +67,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.5.8",
+            "version": "0.5.9",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -85,15 +91,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.5.8/cc-multibakery-0.5.8.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.5.9/cc-multibakery-0.5.9.ccmod",
                 "hash": {
-                    "sha256": "f06d4395d0c7437f8035829d277fd97be4c0adac5b5756e16a4f826b7df8d15c"
+                    "sha256": "68adf052bb3f82709035daf6eec8049cccb43c9bd62ad93c40fdb02c21ec1026"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1763060192000,
+        "lastUpdateTimestamp": 1763145921000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add ig.ACTION_STEP remote state (fixes missing combat sounds, zooms, blurs)\n\n### Fixed\n\n- Fix remote sc.CombatProxyEntity not sharing animation state\n- Fix ig.ENTITY.ObjectLayerView being invisible\n- Fix no sound playing on client when the map instance is hidden",
+                "version": "0.5.9",
+                "timestamp": 1763145921000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.5.9"
+            },
             {
                 "body": "### Added\n\n- Add option (on by default) to give new players cloned stats of the first player found on the map\n\n### Fixed\n\n- Fix entity event to var causal chain sometimes not working on var increments\n- Fix most crashes on remote cutscene skip (there are still some rare ones)\n- Fix ig.ENTITY.WallVertical & ig.ENTITY.WallHorizontal initial remote state\n- Fix ig.ENTITY.EnemyCounter ding on remote on second remote client creation\n- Fix ig.ENTITY.Effect not spawning on remote after a while\n- Fix crash when loading maps in areas with more than one floor\n- Fix creating server from current state resetting stuff like vars, active landmarks etc.\n- Fix saving server state not saving stuff like vars, active landmarks etc.\n- Fix ig.ENTITY.NPC#postActionUpdate getting overriden when server is off\n- Fix map menu player markers not getting drawn on some maps\n- Fix map menu player markers persisting after restarting the server\n- Fix not all vars getting linked to map/client instance\n- Fix ig.ENTITY.Ball remote state not including velocity causing misrotated projectiles\n- Fix sc.PlayerConfig inter-instance coupling\n- Fix ascended equipment level scaling being inconsistent (now it picks the highest level on the server)\n- Fix remote ig.EVENT_STEP.SHOW_BOARD_MSG and ig.EVENT_STEP.SHOW_CHOICE",
                 "version": "0.5.8",
