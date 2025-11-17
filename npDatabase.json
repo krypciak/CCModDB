@@ -161,5 +161,47 @@
                 "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.5.0"
             }
         ]
+    },
+    "cc-variable-charge-time": {
+        "metadataCCMod": {
+            "id": "cc-variable-charge-time",
+            "version": "1.0.0",
+            "title": "Variable charge time",
+            "description": "Adjust combat art timings",
+            "repository": "https://github.com/krypciak/cc-variable-charge-time",
+            "tags": [
+                "combat arts",
+                "fun",
+                "library"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "crosscode": ">=1.4.0",
+                "ccmodmanager": ">=1.1.2"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/cc-variable-charge-time/releases/download/v1.0.0/cc-variable-charge-time-1.0.0.ccmod",
+                "hash": {
+                    "sha256": "0362fb7b8faedc72aa6d1cae1e6935674c14cf83daaada3cfd6fff97ae4c45cc"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1763388376000,
+        "releasePages": [
+            {
+                "body": "",
+                "version": "1.0.0",
+                "timestamp": 1763388376000,
+                "url": "https://github.com/krypciak/cc-variable-charge-time/releases/tag/v1.0.0"
+            }
+        ]
     }
 }
