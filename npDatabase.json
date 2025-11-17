@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.4/cc-instanceinator-1.0.4.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.5/cc-instanceinator-1.0.5.ccmod",
                 "hash": {
-                    "sha256": "8a5e3942b7ea063314803a21ea78380d26537f4aba27b888d91d4f072d10db23"
+                    "sha256": "8f4357f8ac442184b780f66eda52cb14960baca4883171b2bb8b421636b6d25f"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1763145886000,
+        "lastUpdateTimestamp": 1763396490000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fixed crash after unloading a ig.Cacheable twice",
+                "version": "1.0.5",
+                "timestamp": 1763396491000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.0.5"
+            },
             {
                 "body": "### Added\n\n- Add souldPlayCondition argument to instance constructor",
                 "version": "1.0.4",
@@ -67,7 +73,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.5.9",
+            "version": "0.6.0",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -91,15 +97,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.5.9/cc-multibakery-0.5.9.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.6.0/cc-multibakery-0.6.0.ccmod",
                 "hash": {
-                    "sha256": "68adf052bb3f82709035daf6eec8049cccb43c9bd62ad93c40fdb02c21ec1026"
+                    "sha256": "b4fc14996cba7d5dbff0549fa72e1da23a626751b1808f3c6ae9bcffb8ddc0f8"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1763145921000,
+        "lastUpdateTimestamp": 1763396478000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add cc-variable-charge-time support\n\n### Fixed\n\n- Fix remote sc.CombatProxyEntity not sharing animation state\n- Fix ig.ENTITY.ObjectLayerView being invisible\n- Fix no sound playing on client when the map instance is hidden\n- Fix error when creating a client in the \"Manage server\" menu and copyNewPlayerStats is on\n- Fix zoom on remote not resetting after using Amber Breaker\n- Fix remote item gained popup appearing when losing items (for example eating)\n- Fix remote gamepad aim not working",
+                "version": "0.6.0",
+                "timestamp": 1763396478000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.6.0"
+            },
             {
                 "body": "### Added\n\n- Add ig.ACTION_STEP remote state (fixes missing combat sounds, zooms, blurs)\n\n### Fixed\n\n- Fix remote sc.CombatProxyEntity not sharing animation state\n- Fix ig.ENTITY.ObjectLayerView being invisible\n- Fix no sound playing on client when the map instance is hidden",
                 "version": "0.5.9",
