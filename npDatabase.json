@@ -73,7 +73,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.6.0",
+            "version": "0.6.1",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -97,15 +97,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.6.0/cc-multibakery-0.6.0.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.6.1/cc-multibakery-0.6.1.ccmod",
                 "hash": {
-                    "sha256": "b4fc14996cba7d5dbff0549fa72e1da23a626751b1808f3c6ae9bcffb8ddc0f8"
+                    "sha256": "46d4e019f18aa99219a0422db7111f119f4d91252c8d6fae1dec3c354225ef57"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1763396478000,
+        "lastUpdateTimestamp": 1763574683000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Added var access namespace: `multi.`\n\n### Changed\n\n- Allow k&m input even when in gamepad input mode\n\n### Fixed\n\n- Fix triblader triggering melee attack circle glow when dashing\n- Fix remote client sometimes desyncing when using ig.ENTITY.TeleportField\n- Fix remote crash when hit effect occurs on the same frame that the entity gets killed (for example triblader Deploy Shields and lea Flare Burn!)\n- Fix remote double effects on sc.CombatProxyEntity death\n- Fix waiting for gamepad poping up every time a map is switched\n- Fix combat art branch linking on lea character configs\n- Don't apply blur and zoom effects in menus\n- Don't send remote clients other player action step data (fixes crashes on Gatling Arctillery for example)\n- Fix remote zoom/blur effects not clearing after certain combat arts",
+                "version": "0.6.1",
+                "timestamp": 1763574684000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.6.1"
+            },
             {
                 "body": "### Added\n\n- Add cc-variable-charge-time support\n\n### Fixed\n\n- Fix remote sc.CombatProxyEntity not sharing animation state\n- Fix ig.ENTITY.ObjectLayerView being invisible\n- Fix no sound playing on client when the map instance is hidden\n- Fix error when creating a client in the \"Manage server\" menu and copyNewPlayerStats is on\n- Fix zoom on remote not resetting after using Amber Breaker\n- Fix remote item gained popup appearing when losing items (for example eating)\n- Fix remote gamepad aim not working",
                 "version": "0.6.0",
