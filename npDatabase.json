@@ -117,7 +117,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.6.1",
+            "version": "0.7.0",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -132,24 +132,31 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.0.3",
+                "cc-instanceinator": ">=1.0.6",
                 "nax-ccuilib": ">=1.5.5",
-                "ccmodmanager": ">=1.1.2"
+                "ccmodmanager": ">=1.1.2",
+                "cc-krypek-lib": ">=1.0.0"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.6.1/cc-multibakery-0.6.1.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.0/cc-multibakery-0.7.0.ccmod",
                 "hash": {
-                    "sha256": "46d4e019f18aa99219a0422db7111f119f4d91252c8d6fae1dec3c354225ef57"
+                    "sha256": "21807c735344ef6a7e44aa3932d0ed0268d75bda0f7ed2efb3fb1cd378c16ee8"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1763574683000,
+        "lastUpdateTimestamp": 1765998134000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add client specific `map.client.` and `tmp.client.` variable namespaces\n- Add game addon remote client compatibility check (to check if client has the DLC if the server has it)\n- Add player skin support\n- Add player exp info to save file and remote syncing\n- Added the party system\n\n### Changed\n\n- Ditch entity selection system in favor of var arrays\n- Pvp party rework (now uses the new party system)\n- Custom pvp steps rework\n- Respect cc-instanceinator display id and display fps options\n\n### Fixed\n\n- Fix variables like `player.element` referring to a wrong player when access in the client context\n- Fix remote crashed when trying to spawn an effect whose sheet is not yet loaded\n- Fix player entities on remote not updating visuals every frame\n- Fix remote menu scroll desyncing\n- Fix some some actions sometimes not preserving the event chain and running on the wrong instance\n- Fix variables failing to set when their parent object doesn't exist\n- Fix crash on item drop\n- Fix navigation maps often not working\n- Fix Manage server popup being closeable while Create client popup is shown\n- Fix interactables visual glitches\n- Fix remote state not sending vars with prefix `maps.`\n- Fix circle glow not appearing for other remote players on remote\n- Fix remote game model state getting overriden by client initialization\n- Fix godmode overriding maps vars",
+                "version": "0.7.0",
+                "timestamp": 1765998134000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.0"
+            },
             {
                 "body": "### Added\n\n- Added var access namespace: `multi.`\n\n### Changed\n\n- Allow k&m input even when in gamepad input mode\n\n### Fixed\n\n- Fix triblader triggering melee attack circle glow when dashing\n- Fix remote client sometimes desyncing when using ig.ENTITY.TeleportField\n- Fix remote crash when hit effect occurs on the same frame that the entity gets killed (for example triblader Deploy Shields and lea Flare Burn!)\n- Fix remote double effects on sc.CombatProxyEntity death\n- Fix waiting for gamepad poping up every time a map is switched\n- Fix combat art branch linking on lea character configs\n- Don't apply blur and zoom effects in menus\n- Don't send remote clients other player action step data (fixes crashes on Gatling Arctillery for example)\n- Fix remote zoom/blur effects not clearing after certain combat arts",
                 "version": "0.6.1",
