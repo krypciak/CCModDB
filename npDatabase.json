@@ -117,7 +117,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.7.0",
+            "version": "0.7.1",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -142,15 +142,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.0/cc-multibakery-0.7.0.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.1/cc-multibakery-0.7.1.ccmod",
                 "hash": {
-                    "sha256": "21807c735344ef6a7e44aa3932d0ed0268d75bda0f7ed2efb3fb1cd378c16ee8"
+                    "sha256": "010d4f0c8373117c9c29b581638c70d749698c46a7acd0ec0b89b266e66cefb0"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1765998134000,
+        "lastUpdateTimestamp": 1766071954000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix crash when starting server using the Server manage menu\n- Fix crash when a player in pvp leaves the server\n- Fix generated random username in the Create client menu sometimes being invalid\n- Fix certain player properties (like face orientation or items) being shared across different players when loading from save\n- Fix pvp soft locking sometimes after round end",
+                "version": "0.7.1",
+                "timestamp": 1766071954000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.1"
+            },
             {
                 "body": "### Added\n\n- Add client specific `map.client.` and `tmp.client.` variable namespaces\n- Add game addon remote client compatibility check (to check if client has the DLC if the server has it)\n- Add player skin support\n- Add player exp info to save file and remote syncing\n- Added the party system\n\n### Changed\n\n- Ditch entity selection system in favor of var arrays\n- Pvp party rework (now uses the new party system)\n- Custom pvp steps rework\n- Respect cc-instanceinator display id and display fps options\n\n### Fixed\n\n- Fix variables like `player.element` referring to a wrong player when access in the client context\n- Fix remote crashed when trying to spawn an effect whose sheet is not yet loaded\n- Fix player entities on remote not updating visuals every frame\n- Fix remote menu scroll desyncing\n- Fix some some actions sometimes not preserving the event chain and running on the wrong instance\n- Fix variables failing to set when their parent object doesn't exist\n- Fix crash on item drop\n- Fix navigation maps often not working\n- Fix Manage server popup being closeable while Create client popup is shown\n- Fix interactables visual glitches\n- Fix remote state not sending vars with prefix `maps.`\n- Fix circle glow not appearing for other remote players on remote\n- Fix remote game model state getting overriden by client initialization\n- Fix godmode overriding maps vars",
                 "version": "0.7.0",
