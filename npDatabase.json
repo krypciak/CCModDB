@@ -79,7 +79,7 @@
     "cc-krypek-lib": {
         "metadataCCMod": {
             "id": "cc-krypek-lib",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "title": "Krypek's library",
             "description": "Collection of steps, API's, developer tools",
             "repository": "https://github.com/krypciak/cc-krypek-lib",
@@ -97,15 +97,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.0.0/cc-krypek-lib-1.0.0.ccmod",
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.1.0/cc-krypek-lib-1.1.0.ccmod",
                 "hash": {
-                    "sha256": "166d764d5cb86172635ec47441f3454b661d50bcb51fe86011606e79e238951e"
+                    "sha256": "9c7535ddad4e6ca0ee897bbd029dc92fd271bd85831578069afb22fc9ba92d5b"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1765997957000,
+        "lastUpdateTimestamp": 1766162776000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add option to console.warn when an non-existent step is parsed\n- Add comment step\n- Add ig.EVENT_STEP.FORCE_LEVEL_UP\n- Add `logType` to ig.EVENT_STEP.LOG\n- Add `game.entities.name.entity_name` variable\n\n### Changed\n\n- Replace marker position vec resolve with a more general `game.entities.name.` variable\n\n### Fixed\n\n- Fix step macros not replacing arguments with the literal type of number",
+                "version": "1.1.0",
+                "timestamp": 1766162777000,
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.1.0"
+            },
             {
                 "body": "Initial release",
                 "version": "1.0.0",
@@ -117,7 +123,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.7.1",
+            "version": "0.7.2",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -135,22 +141,28 @@
                 "cc-instanceinator": ">=1.0.6",
                 "nax-ccuilib": ">=1.5.5",
                 "ccmodmanager": ">=1.1.2",
-                "cc-krypek-lib": ">=1.0.0"
+                "cc-krypek-lib": ">=1.1.0"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.1/cc-multibakery-0.7.1.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.2/cc-multibakery-0.7.2.ccmod",
                 "hash": {
-                    "sha256": "010d4f0c8373117c9c29b581638c70d749698c46a7acd0ec0b89b266e66cefb0"
+                    "sha256": "32faf39a00c04d374a1c4fa37df976bc3c8610049843e91f24f8df9068689f25"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1766071954000,
+        "lastUpdateTimestamp": 1766162847000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix compatibility with cc-krypek-lib v1.1.0",
+                "version": "0.7.2",
+                "timestamp": 1766162847000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.2"
+            },
             {
                 "body": "### Fixed\n\n- Fix crash when starting server using the Server manage menu\n- Fix crash when a player in pvp leaves the server\n- Fix generated random username in the Create client menu sometimes being invalid\n- Fix certain player properties (like face orientation or items) being shared across different players when loading from save\n- Fix pvp soft locking sometimes after round end",
                 "version": "0.7.1",
