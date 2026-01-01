@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.6/cc-instanceinator-1.0.6.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.7/cc-instanceinator-1.0.7.ccmod",
                 "hash": {
-                    "sha256": "29ed3cf5bc7da8b8d451cf9432ce08959917cd5877ebc2b1356614c6961689ce"
+                    "sha256": "e6faed3abd6d199ba9270425bf9011a65749118cd2e5431a7d5ef963211e2bbc"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1765997769000,
+        "lastUpdateTimestamp": 1767289295000,
         "releasePages": [
+            {
+                "body": "### Changed\n\n- Allow playing music from only one specific configurable instance at once\n\n### Fixed\n\n- Pause music on instance destroy",
+                "version": "1.0.7",
+                "timestamp": 1767289296000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.0.7"
+            },
             {
                 "body": "### Fixed\n\n- Fix sc.PlayerSkinLibrary extension skins not available on copied instances",
                 "version": "1.0.6",
@@ -123,7 +129,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.7.2",
+            "version": "0.7.3",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -138,7 +144,7 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.0.6",
+                "cc-instanceinator": ">=1.0.7",
                 "nax-ccuilib": ">=1.5.5",
                 "ccmodmanager": ">=1.1.2",
                 "cc-krypek-lib": ">=1.1.0"
@@ -148,15 +154,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.2/cc-multibakery-0.7.2.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.3/cc-multibakery-0.7.3.ccmod",
                 "hash": {
-                    "sha256": "32faf39a00c04d374a1c4fa37df976bc3c8610049843e91f24f8df9068689f25"
+                    "sha256": "bb3b14e265566792c8f90cf474209f31702a9cf2126ee55ec16716bfa65f0cbe"
                 }
             }
         ],
-        "stars": 5,
-        "lastUpdateTimestamp": 1766162847000,
+        "stars": 6,
+        "lastUpdateTimestamp": 1767289353000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add ping interval and ping timeout server options\n- Add remote camera and screen blur step state\n- Add ig.ENTITY.OneTimeSwitch event chain preservation\n- Add ig.ENTITY.EnemyCounter event chain preservation\n- Add ig.ENTITY.NPC activeStateIdx remote state\n- Add remote player credit state\n\n### Changed\n\n- Teleport new remote players to the same map as master player\n- Allow music to play only in the master player's instance\n\n### Fixed\n\n- Fix remote player camera detaching after teleporting to the same map\n- Fix remote external animations (like lea sitting)\n- Fix crash on ig.EVENT_STEP.ADD_GUI\n- Fix pvp hp bars not disappearing after player defeat on remote\n- Fix pvp hp bars not rearranging themselves after player defeat on remote\n- Fix remote npc animations sometimes not being correct",
+                "version": "0.7.3",
+                "timestamp": 1767289354000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.3"
+            },
             {
                 "body": "### Fixed\n\n- Fix compatibility with cc-krypek-lib v1.1.0",
                 "version": "0.7.2",
