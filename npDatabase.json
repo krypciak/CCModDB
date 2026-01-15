@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.7/cc-instanceinator-1.0.7.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.8/cc-instanceinator-1.0.8.ccmod",
                 "hash": {
-                    "sha256": "e6faed3abd6d199ba9270425bf9011a65749118cd2e5431a7d5ef963211e2bbc"
+                    "sha256": "c5b6203d61697602612dbb20c2237e4ced6d84755ce4f7bbdd26fd1cdac56cb5"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1767289295000,
+        "lastUpdateTimestamp": 1768510046000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix crash when entering map with no bgm",
+                "version": "1.0.8",
+                "timestamp": 1768510047000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.0.8"
+            },
             {
                 "body": "### Changed\n\n- Allow playing music from only one specific configurable instance at once\n\n### Fixed\n\n- Pause music on instance destroy",
                 "version": "1.0.7",
