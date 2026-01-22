@@ -135,7 +135,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.7.3",
+            "version": "0.7.4",
             "title": "Multibakery",
             "description": "No way",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -150,7 +150,7 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.0.7",
+                "cc-instanceinator": ">=1.0.8",
                 "nax-ccuilib": ">=1.5.5",
                 "ccmodmanager": ">=1.1.2",
                 "cc-krypek-lib": ">=1.1.0"
@@ -160,15 +160,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.3/cc-multibakery-0.7.3.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.4/cc-multibakery-0.7.4.ccmod",
                 "hash": {
-                    "sha256": "bb3b14e265566792c8f90cf474209f31702a9cf2126ee55ec16716bfa65f0cbe"
+                    "sha256": "2bbb17fd3a091a2f3267462cf389d9ebaa998ce54a7d0556535a5e2a600a11be"
                 }
             }
         ],
         "stars": 6,
-        "lastUpdateTimestamp": 1767289353000,
+        "lastUpdateTimestamp": 1769111596000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix server crash when remote player joins and the save file has a lot of data",
+                "version": "0.7.4",
+                "timestamp": 1769111596000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.4"
+            },
             {
                 "body": "### Added\n\n- Add ping interval and ping timeout server options\n- Add remote camera and screen blur step state\n- Add ig.ENTITY.OneTimeSwitch event chain preservation\n- Add ig.ENTITY.EnemyCounter event chain preservation\n- Add ig.ENTITY.NPC activeStateIdx remote state\n- Add remote player credit state\n\n### Changed\n\n- Teleport new remote players to the same map as master player\n- Allow music to play only in the master player's instance\n\n### Fixed\n\n- Fix remote player camera detaching after teleporting to the same map\n- Fix remote external animations (like lea sitting)\n- Fix crash on ig.EVENT_STEP.ADD_GUI\n- Fix pvp hp bars not disappearing after player defeat on remote\n- Fix pvp hp bars not rearranging themselves after player defeat on remote\n- Fix remote npc animations sometimes not being correct",
                 "version": "0.7.3",
