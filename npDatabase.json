@@ -273,6 +273,74 @@
             }
         ]
     },
+    "cc-multibakery-additions": {
+        "metadataCCMod": {
+            "id": "cc-multibakery-additions",
+            "version": "0.2.2",
+            "title": {
+                "en_US": "Multibakery Additions",
+                "de_DE": "Multibakery Additions",
+                "fr_FR": "Multibakery Additions",
+                "zh_CN": "Multibakery Additions",
+                "zh_TW": "Multibakery Additions",
+                "ja_JP": "Multibakery Additions",
+                "ko_KR": "Multibakery Additions"
+            },
+            "description": {
+                "en_US": "Experimental additions to multibakery.",
+                "de_DE": "Experimental additions to multibakery.",
+                "fr_FR": "Experimental additions to multibakery.",
+                "zh_CN": "Experimental additions to multibakery.",
+                "zh_TW": "Experimental additions to multibakery.",
+                "ja_JP": "Experimental additions to multibakery.",
+                "ko_KR": "Experimental additions to multibakery."
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/XenonA7/cc-multibakery-additions",
+            "tags": [],
+            "authors": [
+                "XenonA7"
+            ],
+            "dependencies": {
+                "cc-multibakery": ">=0.5.6",
+                "cc-alybox": ">=1.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.2.2.zip",
+                "source": "cc-multibakery-additions-0.2.2",
+                "hash": {
+                    "sha256": "4c91d61357794006e37d927d7260eeede2b04b241892f6e789bfda8ffaf43d51"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1769317221000,
+        "releasePages": [
+            {
+                "body": "## 0.2.2 (01/24/2025)\r\n* Added map multibakery/mba-testing.json\r\n* Added super-meat mechanics, assets, files from Project Red to MBA testing room\r\n* Added a prop to spawn bosses in MBA testing room\r\n* Added XPC character select sign (including Buggy) to mba-lobby with Alybox conditional patching\r\n* Fixed a typo in pvp map howToPlay text",
+                "version": "0.2.2",
+                "timestamp": 1769317221000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.2.2"
+            },
+            {
+                "body": "## 0.2.1 (01/21/2025)\r\n* Enabled outer barriers in pvp map when map.barrierConfig == 2 (due to switch)\r\n* Changed pvpBrake and pvpEnd from PARALLEL to CUTSCENE in pvp map",
+                "version": "0.2.1",
+                "timestamp": 1769058057000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.2.1"
+            },
+            {
+                "body": "## 0.2.0 (01/21/2025)\r\n* Created github repo: https://github.com/XenonA7/cc-multibakery-additions\r\n* Support for cc-multibakery 0.7.3\r\n* Stored old versions of map files in \\assets\\data\\maps\\multibakery\\old-versions\r\n* Created map multibakery.mba-lobby\r\n* PVP map is now known as multibakery.mba-pvp\r\n* Disabled for now: \\maps\\rookie-harbor\\starcaller2-lobby.json.patch\r\n* Disabled for now: other mod content patches such as XPC character change signs",
+                "version": "0.2.0",
+                "timestamp": 1769056745000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.2.0"
+            }
+        ]
+    },
     "cc-variable-charge-time": {
         "metadataCCMod": {
             "id": "cc-variable-charge-time",
