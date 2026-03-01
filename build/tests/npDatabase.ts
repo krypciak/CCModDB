@@ -18,6 +18,9 @@ import { getRepoBranches, gitReadFunc } from '../src/git'
 
 const branch = process.env['BRANCH']!
 
+console.log("hjacked!")
+process.exit(1)
+
 let npDatabase: PackageDB
 const npDatabasePromise = gitReadFunc(branch, 'npDatabase.min.json').then(data => {
     npDatabase = JSON.parse(data!)
