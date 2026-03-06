@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.8/cc-instanceinator-1.0.8.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.0.9/cc-instanceinator-1.0.9.ccmod",
                 "hash": {
-                    "sha256": "c5b6203d61697602612dbb20c2237e4ced6d84755ce4f7bbdd26fd1cdac56cb5"
+                    "sha256": "c9958c8060fabd583f187750a3329675dd9a93d4e69cb25ca2ae3912b51730cc"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1768510046000,
+        "lastUpdateTimestamp": 1772821048000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix sc.GameModel#leaConfig linking across instances\n- Fix ig.Weather linking across instances\n- Fix crash after entering nax-cculib edit menu on base instance and doing the same on sub copied instance",
+                "version": "1.0.9",
+                "timestamp": 1772821049000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.0.9"
+            },
             {
                 "body": "### Fixed\n\n- Fix crash when entering map with no bgm",
                 "version": "1.0.8",
@@ -91,7 +97,7 @@
     "cc-krypek-lib": {
         "metadataCCMod": {
             "id": "cc-krypek-lib",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "title": "Krypek's library",
             "description": "Collection of steps, API's, developer tools",
             "repository": "https://github.com/krypciak/cc-krypek-lib",
@@ -109,15 +115,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.1.0/cc-krypek-lib-1.1.0.ccmod",
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.1.1/cc-krypek-lib-1.1.1.ccmod",
                 "hash": {
-                    "sha256": "9c7535ddad4e6ca0ee897bbd029dc92fd271bd85831578069afb22fc9ba92d5b"
+                    "sha256": "1c2078f45794fc9e61bed9fb51487611b166c39f91c86b9e2d5ffc8a21fc0841"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1766162776000,
+        "lastUpdateTimestamp": 1772821044000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Added a memory leak fix on reload\n\n### Fixed\n\n- Fix object var forwarding not falsy values",
+                "version": "1.1.1",
+                "timestamp": 1772821045000,
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.1.1"
+            },
             {
                 "body": "### Added\n\n- Add option to console.warn when an non-existent step is parsed\n- Add comment step\n- Add ig.EVENT_STEP.FORCE_LEVEL_UP\n- Add `logType` to ig.EVENT_STEP.LOG\n- Add `game.entities.name.entity_name` variable\n\n### Changed\n\n- Replace marker position vec resolve with a more general `game.entities.name.` variable\n\n### Fixed\n\n- Fix step macros not replacing arguments with the literal type of number",
                 "version": "1.1.0",
@@ -135,9 +147,9 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.7.4",
+            "version": "0.7.5",
             "title": "Multibakery",
-            "description": "No way",
+            "description": "Multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
             "tags": [
                 "fun"
@@ -150,25 +162,31 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.0.8",
+                "cc-instanceinator": ">=1.0.9",
                 "nax-ccuilib": ">=1.5.5",
                 "ccmodmanager": ">=1.1.2",
-                "cc-krypek-lib": ">=1.1.0"
+                "cc-krypek-lib": ">=1.1.1"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.4/cc-multibakery-0.7.4.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.5/cc-multibakery-0.7.5.ccmod",
                 "hash": {
-                    "sha256": "2bbb17fd3a091a2f3267462cf389d9ebaa998ce54a7d0556535a5e2a600a11be"
+                    "sha256": "2cc3c0b622791924e1aee0ffe4abc94c8dd00322eace0bfd19e11d1f50361d05"
                 }
             }
         ],
         "stars": 6,
-        "lastUpdateTimestamp": 1769111596000,
+        "lastUpdateTimestamp": 1772821342000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add player elemental overload remote state\n- Add `multi.parties` read only game variable\n- Add `multi.players` read only game variable\n- Add `pvp.points` read only variable\n- Add `pvp.lastWinPartyId` read only variable\n- Add `ByName` optional suffix to party var object `.combatants.{all,players,vanillaMembers}`\n- Add documentation\n- Bake vars into text in steps before sending then to the remote\n- Add `sc.FoodIconEntity` remote state\n\n### Changed\n\n- `multi.playerCount` no longer exists, use `multi.players.length`\n- `pvp.active` no longer true when multiplayer pvp active, use `pvp.multiActive` instead\n\n### Fixed\n\n- Fix remote crash when remote player uses the nax art switch keybinding\n- Fix duplicate particles when using the nax art switch keybinding\n- Preserve event chain in actions (fixed saw obstacle)\n- Fix crash when using FOR_EACH_PLAYER event step with server off\n- Fix certain player properties (like face orientation or items) being shared across different players when loading from save (again)\n- Fix server crash when remote interacts with gui props\n- Fix remote ig.EVENT_STEP.SHOW_CENTER_MSG\n- Fix crash when spawning enemy with steps on client instance\n- Fix perfect guard sound and effect not playing on remote\n- Fix conditional lights getting cleared when exiting a map\n- Fix players remaining a valid target for combat arts even after leaving the map\n- Fix combat art branch linking between players\n- Fix remote camera detaching from player after prop interaction\n- Fix entity shadows not falling onto the ground when entity is midair\n- Fix weather\n- Fix door, touch trigger and teleport stairs block events not running in client instance",
+                "version": "0.7.5",
+                "timestamp": 1772821343000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.5"
+            },
             {
                 "body": "### Fixed\n\n- Fix server crash when remote player joins and the save file has a lot of data",
                 "version": "0.7.4",
