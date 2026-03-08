@@ -294,7 +294,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.2.2",
+            "version": "0.3.0",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -322,23 +322,29 @@
                 "XenonA7"
             ],
             "dependencies": {
-                "cc-multibakery": ">=0.5.6",
+                "cc-multibakery": ">=0.7.5",
                 "cc-alybox": ">=1.1.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.2.2.zip",
-                "source": "cc-multibakery-additions-0.2.2",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.3.0.zip",
+                "source": "cc-multibakery-additions-0.3.0",
                 "hash": {
-                    "sha256": "4c91d61357794006e37d927d7260eeede2b04b241892f6e789bfda8ffaf43d51"
+                    "sha256": "f8fb1089b1031fb68b3884f1a8700495e1ce71c404cd2d74b77fe0e17f73259e"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1769317221000,
+        "lastUpdateTimestamp": 1772930748000,
         "releasePages": [
+            {
+                "body": "## 0.3.0 (03/07/2025)\r\n### General\r\n* Multibakery dependency version increased to 0.7.5\r\n### New Content\r\n* Added map multibakery/mba-outdoors\r\n* Added map multibakery/mba-south\r\n* Added \"fishing\" game test\r\n* Added replacement vanilla map autumn/path-7-1 that contains a west exit\r\n* Added a custom sign prop at \\assets\\data\\props\\multibakery.json\r\n* Added option to rename the MBA building using the sign to the left of the pvp room door in mba-lobby\r\n### Changes\r\n* Updated mba-lobby to use new 0.7.5 variables\r\n* Set \"tmp.xpcDisableHoming\" to true in event mapInitOnce on pvp map\r\n* Replaced s_startMultiPvp with a OneTimeSwitch that is closer to the dance floor and disappears during pvp duels in pvp map\r\n* Deleted prop palettes from mba-lobby and mba-testing\r\n* Added hitInvincible to all attacks in meat-saw enemy\r\n* Updated fall-detector event in mba-testing to use FOR_EACH_PLAYER\r\n* Updated playBattleMusic event in mba-pvp to use FOR_EACH_PLAYER",
+                "version": "0.3.0",
+                "timestamp": 1772930748000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.3.0"
+            },
             {
                 "body": "## 0.2.2 (01/24/2025)\r\n* Added map multibakery/mba-testing.json\r\n* Added super-meat mechanics, assets, files from Project Red to MBA testing room\r\n* Added a prop to spawn bosses in MBA testing room\r\n* Added XPC character select sign (including Buggy) to mba-lobby with Alybox conditional patching\r\n* Fixed a typo in pvp map howToPlay text",
                 "version": "0.2.2",
