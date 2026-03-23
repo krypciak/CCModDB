@@ -312,7 +312,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -339,24 +339,31 @@
             "authors": [
                 "XenonA7"
             ],
+            "prestart": "prestart.js",
             "dependencies": {
-                "cc-multibakery": ">=0.7.5",
+                "cc-multibakery": ">=0.7.6",
                 "cc-alybox": ">=1.1.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.3.0.zip",
-                "source": "cc-multibakery-additions-0.3.0",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.3.1.zip",
+                "source": "cc-multibakery-additions-0.3.1",
                 "hash": {
-                    "sha256": "f8fb1089b1031fb68b3884f1a8700495e1ce71c404cd2d74b77fe0e17f73259e"
+                    "sha256": "6b0feb747d1298556b585b3eb5ab10e5f1437c8161f84088ef7e203cdacd1f5c"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1772930748000,
+        "lastUpdateTimestamp": 1774219679000,
         "releasePages": [
+            {
+                "body": "## 0.3.1 (03/22/2026)\r\n### Issues\r\n- [0.3.1] Assertion error on pvp start\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/1\r\n### General\r\n- Multibakery dependency version increased to 0.7.5\r\n### New Content\r\n- Added prestart.js\r\n- Added recolored tileset \\assets\\media\\map\\co-op-dungeon-outer.png\r\n- Added the co-op-outer map style\r\n- Added map co-op-dng/template\r\n- Added TeleportField to template from mba-outdoors\r\n- Defined new 48x48 DynamicPlatform stylekey dynPlatformLarge\r\n### Changes\r\n- Changed mba-outdoors to use co-op-dungeon-outer.png instead of final-dungeon-outer\r\n- Added AR_MSG when pvp cannot start due to insufficient parties\r\n  * Doesn't run FOR_EACH_PLAYER due to assertion error\r\n- All AR_MSG steps in mba-pvp map now execute via FOR_EACH_PLAYER\r\n- Set cameraInBounds to false for map mba-south\r\n- Added missing concrete floor details in mba-south\r\n- Darkened co-op dungeon entrance ground tiles\r\n### Fixes\r\n- Changed variable condition pvp.active to pvp.multiActive in mba-pvp\r\n- Fixed changelog dates\r\n- Changed \"fishing\" NPC reactType to FIXED_FACE in mba-outdoors",
+                "version": "0.3.1",
+                "timestamp": 1774219679000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.3.1"
+            },
             {
                 "body": "## 0.3.0 (03/07/2025)\r\n### General\r\n* Multibakery dependency version increased to 0.7.5\r\n### New Content\r\n* Added map multibakery/mba-outdoors\r\n* Added map multibakery/mba-south\r\n* Added \"fishing\" game test\r\n* Added replacement vanilla map autumn/path-7-1 that contains a west exit\r\n* Added a custom sign prop at \\assets\\data\\props\\multibakery.json\r\n* Added option to rename the MBA building using the sign to the left of the pvp room door in mba-lobby\r\n### Changes\r\n* Updated mba-lobby to use new 0.7.5 variables\r\n* Set \"tmp.xpcDisableHoming\" to true in event mapInitOnce on pvp map\r\n* Replaced s_startMultiPvp with a OneTimeSwitch that is closer to the dance floor and disappears during pvp duels in pvp map\r\n* Deleted prop palettes from mba-lobby and mba-testing\r\n* Added hitInvincible to all attacks in meat-saw enemy\r\n* Updated fall-detector event in mba-testing to use FOR_EACH_PLAYER\r\n* Updated playBattleMusic event in mba-pvp to use FOR_EACH_PLAYER",
                 "version": "0.3.0",
