@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.0/cc-instanceinator-1.1.0.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.1/cc-instanceinator-1.1.1.ccmod",
                 "hash": {
-                    "sha256": "6f17f4e1a58b9b4f9acc86e7be225430b77bc49f96015035a38e1916d659e67e"
+                    "sha256": "acd8f97a8c695ee76b89ee821ce9728705f4945c5aee714b5e3c93e50172c50b"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1773248539000,
+        "lastUpdateTimestamp": 1775205398000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix ccmodmanager global keybindings on copied instances\n- Fix bgm steps not working with multiple instances",
+                "version": "1.1.1",
+                "timestamp": 1775205399000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.1"
+            },
             {
                 "body": "### Fixed\n\n- Improve fullscreen handling",
                 "version": "1.1.0",
@@ -103,7 +109,7 @@
     "cc-krypek-lib": {
         "metadataCCMod": {
             "id": "cc-krypek-lib",
-            "version": "1.1.2",
+            "version": "1.2.0",
             "title": "Krypek's library",
             "description": "Collection of steps, API's, developer tools",
             "repository": "https://github.com/krypciak/cc-krypek-lib",
@@ -121,15 +127,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.1.2/cc-krypek-lib-1.1.2.ccmod",
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.2.0/cc-krypek-lib-1.2.0.ccmod",
                 "hash": {
-                    "sha256": "04104736ca7b521213d29bd1bcb1d188a392e5a6e2a03b74c6d542e6b0b9575b"
+                    "sha256": "df2aba845b8774378ff613cf4a3883753b823fedf83b41ef7924d1b8f1dfb823"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1773248544000,
+        "lastUpdateTimestamp": 1775205417000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add `game.entities.enemyType` read only variable\n- Add `tmp.pvpDamageFactor` variable for overriding pvp damage factor\n\n### Fixed\n\n- Fix `ig.EVENT_STEP.SET_VAR` value not getting copied on each call",
+                "version": "1.2.0",
+                "timestamp": 1775205418000,
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.2.0"
+            },
             {
                 "body": "### Changed\n\n- Bake vars into ig.EVENT_STEP.SHOW_INPUT_DIALOG `initialValue`",
                 "version": "1.1.2",
@@ -159,7 +171,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.7.6",
+            "version": "0.7.7",
             "title": "Multibakery",
             "description": "Multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -174,25 +186,31 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.1.0",
+                "cc-instanceinator": ">=1.1.1",
                 "nax-ccuilib": ">=1.5.5",
                 "ccmodmanager": ">=1.1.2",
-                "cc-krypek-lib": ">=1.1.2"
+                "cc-krypek-lib": ">=1.2.0"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.6/cc-multibakery-0.7.6.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.7/cc-multibakery-0.7.7.ccmod",
                 "hash": {
-                    "sha256": "a40dafecbd0f531f2b28034d08cda9f68e241ad8d14221ca01aefcac90a3d171"
+                    "sha256": "c8e8b4f9d496384d5439781d26ff8b171a4d1f980b81f3dd019ab9f228e35ed4"
                 }
             }
         ],
-        "stars": 7,
-        "lastUpdateTimestamp": 1773248618000,
+        "stars": 8,
+        "lastUpdateTimestamp": 1775210078000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Allow clients to have unique interface options\n- Sync client game options for remote clients\n\n### Changed\n\n- Read only var `multi.players` now returns an array of player entities instead of player models\n- Remove `tmp.client` and `map.client` special access variables. Use `tmp.clients[player.username]` instead.\n- Make the default argument `players` in `FOR_EACH_PLAYER` be `{ \"varName\": \"game.entities.type.Player\" }`\n- Simplify new variables graph in docs/GAME-VARIABLED.md\n- Let each client have their own timers\n- Use new `SHOW_OBJECT_SLIDER_DIALOG` from cc-krypek-lib for pvp round selection\n- Don't override pvp damage factor, let cc-krypek-lib handle that\n\n### Fixed\n\n- Fix map interact entries sometimes duplicating\n- Return null when accessing `player.username` on map instance instead of crashing\n- Disallow \"null\" and \"undefined\" player usernames\n- Fix variable resolving not running in client instance on event chain vars\n- Don't crash on `pvp.multiActive` access when server is off\n- Don't crash on `player.username` access when server is off\n- Fix client guis not receiving var change updates\n- Fix crash when an event is redirected to a client\n- Fix bgm steps not working on remote\n- Fix crash when serializing steps with data polluted by ig.EVENT_STEP.FOR_EACH_PLAYER\n- Fix game options often not saving",
+                "version": "0.7.7",
+                "timestamp": 1775210079000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.7"
+            },
             {
                 "body": "### Added\n\n- Add remote ig.ENTITY.Door animation\n- Add sc.BombEntity remote state\n- Add ig.ENTITY.BombPanel remote state\n- Add sc.FerroEntity remote state\n\n### Fixed\n\n- Fix crash when remote player enters after a pvp battle is done\n- Fix ig.ENTITY.OneTimeSwitch not switching to off animation on remote\n- Fix SHOW_EXTERN_ANIM anims syncing only for the current player on remote\n- Fix player actions appearing in a different map after another player attacks him and changes maps\n- Fix crash when player exits in the middle of combat with complex enemies\n- Fix jetpack mod compatibly",
                 "version": "0.7.6",
