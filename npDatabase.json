@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.1/cc-instanceinator-1.1.1.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.2/cc-instanceinator-1.1.2.ccmod",
                 "hash": {
-                    "sha256": "acd8f97a8c695ee76b89ee821ce9728705f4945c5aee714b5e3c93e50172c50b"
+                    "sha256": "5f2a761a75822816204e4fddced83a16ef0d689781a42f1a87061506510be04d"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1775205398000,
+        "lastUpdateTimestamp": 1779294633000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add instance ahead of time creation functionality to improve performance\n- Add instance copy opiton to hide title screen\n\n### Changed\n\n- Do not share ig.SoundManager across instances\n\n### Fixed\n\n- Fix invalid game addon initialization order on instance copy (fixes compatibility with some mods)\n- Improve instance creation time\n- Fix sounds not clearing properly when hiding instances\n- Fix new instances using old global save data",
+                "version": "1.1.2",
+                "timestamp": 1779294634000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.2"
+            },
             {
                 "body": "### Fixed\n\n- Fix ccmodmanager global keybindings on copied instances\n- Fix bgm steps not working with multiple instances",
                 "version": "1.1.1",
@@ -171,9 +177,9 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.7.7",
+            "version": "0.7.9",
             "title": "Multibakery",
-            "description": "Multiplayer and split-screen co-op mod for CrossCode!",
+            "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
             "tags": [
                 "fun"
@@ -186,7 +192,7 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.1.1",
+                "cc-instanceinator": ">=1.1.2",
                 "nax-ccuilib": ">=1.5.5",
                 "ccmodmanager": ">=1.1.2",
                 "cc-krypek-lib": ">=1.2.0"
@@ -196,17 +202,29 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.7/cc-multibakery-0.7.7.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.9/cc-multibakery-0.7.9.ccmod",
                 "hash": {
-                    "sha256": "c8e8b4f9d496384d5439781d26ff8b171a4d1f980b81f3dd019ab9f228e35ed4"
+                    "sha256": "80c10388aa7a917c266350a452e7c228ea0363d1a0a2af06a1cd89839407a1af"
                 }
             }
         ],
-        "stars": 8,
-        "lastUpdateTimestamp": 1775210078000,
+        "stars": 9,
+        "lastUpdateTimestamp": 1779458202000,
         "releasePages": [
             {
-                "body": "### Added\n\n- Allow clients to have unique interface options\n- Sync client game options for remote clients\n\n### Changed\n\n- Read only var `multi.players` now returns an array of player entities instead of player models\n- Remove `tmp.client` and `map.client` special access variables. Use `tmp.clients[player.username]` instead.\n- Make the default argument `players` in `FOR_EACH_PLAYER` be `{ \"varName\": \"game.entities.type.Player\" }`\n- Simplify new variables graph in docs/GAME-VARIABLED.md\n- Let each client have their own timers\n- Use new `SHOW_OBJECT_SLIDER_DIALOG` from cc-krypek-lib for pvp round selection\n- Don't override pvp damage factor, let cc-krypek-lib handle that\n\n### Fixed\n\n- Fix map interact entries sometimes duplicating\n- Return null when accessing `player.username` on map instance instead of crashing\n- Disallow \"null\" and \"undefined\" player usernames\n- Fix variable resolving not running in client instance on event chain vars\n- Don't crash on `pvp.multiActive` access when server is off\n- Don't crash on `player.username` access when server is off\n- Fix client guis not receiving var change updates\n- Fix crash when an event is redirected to a client\n- Fix bgm steps not working on remote\n- Fix crash when serializing steps with data polluted by ig.EVENT_STEP.FOR_EACH_PLAYER\n- Fix game options often not saving",
+                "body": "\n### Fixed\n\n- Fix crash on game enter",
+                "version": "0.7.9",
+                "timestamp": 1779458203000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.9"
+            },
+            {
+                "body": "\n### Added\n\n- Add `Closest player for sound` game option\n- Add LAN server discovery\n\n### Fixed\n\n- Improve server startup time\n- Improve remote server join time\n- Fix sound volumes not caculating properly across multiple maps\n- Fix storage slot saving not working properly\n- Fix sounds not clearing properly when hiding instances\n- Fix random crashes when throwing mjolnir\n- Fix remote Entity NetID Overlap crash\n- Fix server crash when non-ready client performs an action\n- Fix double effects on remote sometimes\n- Fix remote map var changes not working",
+                "version": "0.7.8",
+                "timestamp": 1779294713000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.8"
+            },
+            {
+                "body": "### Added\r\n\r\n- Allow clients to have unique interface options\r\n- Sync client game options for remote clients\r\n\r\n### Changed\r\n\r\n- Read only var `multi.players` now returns an array of player entities instead of player models\r\n- Remove `tmp.client` and `map.client` special access variables. Use `tmp.clients[player.username]` instead.\r\n- Make the default argument `players` in `FOR_EACH_PLAYER` be `{ \"varName\": \"game.entities.type.Player\" }`\r\n- Simplify new variables graph in docs/GAME-VARIABLES.md\r\n- Let each client have their own timers\r\n- Use new `SHOW_OBJECT_SLIDER_DIALOG` from cc-krypek-lib for pvp round selection\r\n- Don't override pvp damage factor, let cc-krypek-lib handle that\r\n\r\n### Fixed\r\n\r\n- Fix map interact entries sometimes duplicating\r\n- Return null when accessing `player.username` on map instance instead of crashing\r\n- Disallow \"null\" and \"undefined\" player usernames\r\n- Fix variable resolving not running in client instance on event chain vars\r\n- Don't crash on `pvp.multiActive` access when server is off\r\n- Don't crash on `player.username` access when server is off\r\n- Fix client guis not receiving var change updates\r\n- Fix crash when an event is redirected to a client\r\n- Fix bgm steps not working on remote\r\n- Fix crash when serializing steps with data polluted by ig.EVENT_STEP.FOR_EACH_PLAYER\r\n- Fix game options often not saving",
                 "version": "0.7.7",
                 "timestamp": 1775210079000,
                 "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.7.7"
