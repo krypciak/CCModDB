@@ -348,7 +348,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -377,23 +377,29 @@
             ],
             "prestart": "prestart.js",
             "dependencies": {
-                "cc-multibakery": ">=0.7.6",
+                "cc-multibakery": ">=0.7.9",
                 "cc-alybox": ">=1.1.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.3.1.zip",
-                "source": "cc-multibakery-additions-0.3.1",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.3.2.zip",
+                "source": "cc-multibakery-additions-0.3.2",
                 "hash": {
-                    "sha256": "6b0feb747d1298556b585b3eb5ab10e5f1437c8161f84088ef7e203cdacd1f5c"
+                    "sha256": "906027174574b1de1f01fcc721f92a34b1160e437b54f9f36e111a471c1455a0"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1774219679000,
+        "lastUpdateTimestamp": 1779515590000,
         "releasePages": [
+            {
+                "body": "## 0.3.2 (05/22/2026)\r\n### Issues\r\n- [0.3.2] Dev room unlock broken while server is running\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/3\r\n- [0.3.2] SHOW_ANIMATION inconsistency in pvpBrake\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/4\r\n- [0.3.2] Host player double BGM tracks after pvp\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/5\r\n### General\r\n- Merged mba-pvp and mba-south edits from Krypek: https://github.com/XenonA7/cc-multibakery-additions/pull/2\r\n- Multibakery dependency version increased to 0.7.9\r\n### New Content\r\n- Added new dev room unlocked by renaming the building to \"mbaDev\" (currently empty)\r\n### Changes\r\n- mba-pvp:\r\n  * Moved tmp.xpcDisableHoming out of mapInitOnce and into the pvpStart and pvpEnd events, with FOR_EACH_PLAYER\r\n  * Players now show the \"aim\" animation during pvpBrake\r\n  * Added teleport show/hide effects to players when positions are reset between rounds\r\n  * Players now properly face towards the center of the arena between rounds\r\n  * Deleted the action teleporting players back to the center in pvpEnd\r\n  * Added an in-game SHOW_OBJECT_SLIDER_DIALOG to set tmp.pvpDamageFactor in the arena config sign\r\n  * Event mapInitOnce renamed to mapInit and changed to ONCE_PER_ENTRY instead of ONCE\r\n  * Added default tmp.pvpDamageFactor setting in mapInit as 0.2",
+                "version": "0.3.2",
+                "timestamp": 1779515590000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.3.2"
+            },
             {
                 "body": "## 0.3.1 (03/22/2026)\r\n### Issues\r\n- [0.3.1] Assertion error on pvp start\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/1\r\n### General\r\n- Multibakery dependency version increased to 0.7.5\r\n### New Content\r\n- Added prestart.js\r\n- Added recolored tileset \\assets\\media\\map\\co-op-dungeon-outer.png\r\n- Added the co-op-outer map style\r\n- Added map co-op-dng/template\r\n- Added TeleportField to template from mba-outdoors\r\n- Defined new 48x48 DynamicPlatform stylekey dynPlatformLarge\r\n### Changes\r\n- Changed mba-outdoors to use co-op-dungeon-outer.png instead of final-dungeon-outer\r\n- Added AR_MSG when pvp cannot start due to insufficient parties\r\n  * Doesn't run FOR_EACH_PLAYER due to assertion error\r\n- All AR_MSG steps in mba-pvp map now execute via FOR_EACH_PLAYER\r\n- Set cameraInBounds to false for map mba-south\r\n- Added missing concrete floor details in mba-south\r\n- Darkened co-op dungeon entrance ground tiles\r\n### Fixes\r\n- Changed variable condition pvp.active to pvp.multiActive in mba-pvp\r\n- Fixed changelog dates\r\n- Changed \"fishing\" NPC reactType to FIXED_FACE in mba-outdoors",
                 "version": "0.3.1",
