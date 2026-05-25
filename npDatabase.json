@@ -348,7 +348,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.3.2",
+            "version": "0.4.0",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -384,16 +384,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.3.2.zip",
-                "source": "cc-multibakery-additions-0.3.2",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.4.0.zip",
+                "source": "cc-multibakery-additions-0.4.0",
                 "hash": {
-                    "sha256": "906027174574b1de1f01fcc721f92a34b1160e437b54f9f36e111a471c1455a0"
+                    "sha256": "87a41397108e6399b41b6ccbd7622cf8551565bb42072b35bbb573cfa07316bb"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1779515590000,
+        "lastUpdateTimestamp": 1779734418000,
         "releasePages": [
+            {
+                "body": "## 0.4.0 (05/25/2026)\r\n### New Content\r\n- Added map co-op-dng/intro-rooms/room-1\r\n- Added WaterBlock support to the final-dng-inner map style using unknown-interior style spritesheet\r\n- Added animation for water bubble tiles in final-dungeon-inner tileset via tile-infos.json patch\r\n- Added water terrain property to water tiles in final-dungeon-inner tileset via terrain.json patch\r\n### Changes\r\n- TEMPORARY: Renamed mba-pvp.json to mba-pvp - Copy.json, created a new placeholder mba-pvp.json that does not have the victory animation\r\n- Standardized \" ' syntax in custom-map-styles.js",
+                "version": "0.4.0",
+                "timestamp": 1779734418000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.4.0"
+            },
+            {
+                "body": "## 0.3.3 (05/23/2026)\r\n### New Content\r\n- PVP winners now do a short victory animation after winning\r\n### Changes\r\n- Teleporter to dungeon template map moved from mba-outdoors to mba-dev\r\n- Teleporters between mba-lobby and mba-dev changed to wave visualType\r\n### Fixes\r\n- Updated SHOW_OBJECT_SLIDER_DIALOG steps in mba-pvp to use `declined` instead of `rejected`",
+                "version": "0.3.3",
+                "timestamp": 1779587810000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.3.3"
+            },
             {
                 "body": "## 0.3.2 (05/22/2026)\r\n### Issues\r\n- [0.3.2] Dev room unlock broken while server is running\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/3\r\n- [0.3.2] SHOW_ANIMATION inconsistency in pvpBrake\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/4\r\n- [0.3.2] Host player double BGM tracks after pvp\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/5\r\n### General\r\n- Merged mba-pvp and mba-south edits from Krypek: https://github.com/XenonA7/cc-multibakery-additions/pull/2\r\n- Multibakery dependency version increased to 0.7.9\r\n### New Content\r\n- Added new dev room unlocked by renaming the building to \"mbaDev\" (currently empty)\r\n### Changes\r\n- mba-pvp:\r\n  * Moved tmp.xpcDisableHoming out of mapInitOnce and into the pvpStart and pvpEnd events, with FOR_EACH_PLAYER\r\n  * Players now show the \"aim\" animation during pvpBrake\r\n  * Added teleport show/hide effects to players when positions are reset between rounds\r\n  * Players now properly face towards the center of the arena between rounds\r\n  * Deleted the action teleporting players back to the center in pvpEnd\r\n  * Added an in-game SHOW_OBJECT_SLIDER_DIALOG to set tmp.pvpDamageFactor in the arena config sign\r\n  * Event mapInitOnce renamed to mapInit and changed to ONCE_PER_ENTRY instead of ONCE\r\n  * Added default tmp.pvpDamageFactor setting in mapInit as 0.2",
                 "version": "0.3.2",
