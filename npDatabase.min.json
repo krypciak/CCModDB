@@ -348,7 +348,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.4.0",
+            "version": "0.5.0",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -384,16 +384,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.4.0.zip",
-                "source": "cc-multibakery-additions-0.4.0",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.5.0.zip",
+                "source": "cc-multibakery-additions-0.5.0",
                 "hash": {
-                    "sha256": "87a41397108e6399b41b6ccbd7622cf8551565bb42072b35bbb573cfa07316bb"
+                    "sha256": "b7dbe94114816344e082a7ec50780cc3b9d72af4aac6e2c2aca3ac25952c26d1"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1779734418000,
+        "lastUpdateTimestamp": 1779769695000,
         "releasePages": [
+            {
+                "body": "## 0.5.0 (05/25/2026)\r\n### New Content\r\n- Added map co-op-dng/intro-rooms/room-2\r\n- Patched in the LINE_SHADOW option for element-turret enemies in which they shoot proxies containing shadows\r\n### Changes\r\n- Renamed prd-blank32x32.png to mba-blank32x32.png\r\n### Fixes\r\n- Various tile fixes for room-1\r\n- SHOW_CHOICE in dev room sign now uses 1 column\r\n- Fixed map path typo in dev room TELEPORT step",
+                "version": "0.5.0",
+                "timestamp": 1779769695000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.5.0"
+            },
+            {
+                "body": "## 0.4.1 (05/25/2026)\r\n### Fixes\r\n- Minor tile fixes to room-1",
+                "version": "0.4.1",
+                "timestamp": 1779735529000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.4.1"
+            },
             {
                 "body": "## 0.4.0 (05/25/2026)\r\n### New Content\r\n- Added map co-op-dng/intro-rooms/room-1\r\n- Added WaterBlock support to the final-dng-inner map style using unknown-interior style spritesheet\r\n- Added animation for water bubble tiles in final-dungeon-inner tileset via tile-infos.json patch\r\n- Added water terrain property to water tiles in final-dungeon-inner tileset via terrain.json patch\r\n### Changes\r\n- TEMPORARY: Renamed mba-pvp.json to mba-pvp - Copy.json, created a new placeholder mba-pvp.json that does not have the victory animation\r\n- Standardized \" ' syntax in custom-map-styles.js",
                 "version": "0.4.0",
