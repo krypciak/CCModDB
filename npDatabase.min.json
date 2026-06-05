@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.2/cc-instanceinator-1.1.2.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.3/cc-instanceinator-1.1.3.ccmod",
                 "hash": {
-                    "sha256": "5f2a761a75822816204e4fddced83a16ef0d689781a42f1a87061506510be04d"
+                    "sha256": "d2c5e02d44d4d474a31a3fe5c890d17cc987312c64c638ada5404be4267c40c1"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1779294633000,
+        "lastUpdateTimestamp": 1780678781000,
         "releasePages": [
+            {
+                "body": "\n### Fixed\n\n- Fix rare tiling error when instance is not yet initialized\n- Fix fixes function getting called twice\n- Fix music volume lock getVolume and setVolume preserving this context on copy\n- Fix keyup events triggering on all visible instances\n- Fix ccloader2 error and warning messages being not visible",
+                "version": "1.1.3",
+                "timestamp": 1780678782000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.3"
+            },
             {
                 "body": "\n### Added\n\n- Add instance ahead of time creation functionality to improve performance\n- Add instance copy opiton to hide title screen\n\n### Changed\n\n- Do not share ig.SoundManager across instances\n\n### Fixed\n\n- Fix invalid game addon initialization order on instance copy (fixes compatibility with some mods)\n- Improve instance creation time\n- Fix sounds not clearing properly when hiding instances\n- Fix new instances using old global save data",
                 "version": "1.1.2",
@@ -177,7 +183,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.7.9",
+            "version": "0.8.0",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -192,7 +198,7 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.1.2",
+                "cc-instanceinator": ">=1.1.3",
                 "nax-ccuilib": ">=1.5.5",
                 "ccmodmanager": ">=1.1.2",
                 "cc-krypek-lib": ">=1.2.0"
@@ -202,15 +208,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.7.9/cc-multibakery-0.7.9.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.0/cc-multibakery-0.8.0.ccmod",
                 "hash": {
-                    "sha256": "80c10388aa7a917c266350a452e7c228ea0363d1a0a2af06a1cd89839407a1af"
+                    "sha256": "c5f28fa6b302c22d4c3648f52c4cd45882a3f6f83943b8a7b4f1bedfbdd3701d"
                 }
             }
         ],
-        "stars": 9,
-        "lastUpdateTimestamp": 1779458202000,
+        "stars": 10,
+        "lastUpdateTimestamp": 1780678833000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add raw websocket network transport method (experimental, disabled by default)\n- Add forceRunOnMap option to EventTrigger\n\n### Changed\n\n- Decrease bundle size by removing dependency on http-server\n- Remove server ping from server list entry since it's misleading\n- Set pvp.lastWinPartyId to the only remaining party on pvp force end (due to player leaving)\n\n### Fixed\n\n- Fix some client actions not preserving event chain\n- Fix enemy pvp points rendering as blue instead of red\n- Initialize player in the correct moment when loading the map\n- Fix compatibility with lqm-joern-mod custom assault projectiles\n- Fix random error message on vanilla startup\n- Fix player state display for things like hp or money playing animation on map entry\n- Fix music unmuting for a split second when creating a new instance\n- Close crossnode repl on server destroy\n- Don't reset pvp state like lastWinPartyId or points after pvp end\n- Fix remote crash when referencing entities in vars in steps\n- Remove player collType getting set to NONE when in cutscene\n- Fix pvp hp bar disappearing on remote when the player is locked",
+                "version": "0.8.0",
+                "timestamp": 1780678835000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.0"
+            },
             {
                 "body": "\n### Fixed\n\n- Fix crash on game enter",
                 "version": "0.7.9",
