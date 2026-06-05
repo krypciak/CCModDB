@@ -348,7 +348,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.5.0",
+            "version": "0.5.3",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -373,7 +373,8 @@
             "repository": "https://github.com/XenonA7/cc-multibakery-additions",
             "tags": [],
             "authors": [
-                "XenonA7"
+                "XenonA7",
+                "krypek"
             ],
             "prestart": "prestart.js",
             "dependencies": {
@@ -384,16 +385,34 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.5.0.zip",
-                "source": "cc-multibakery-additions-0.5.0",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.5.3.zip",
+                "source": "cc-multibakery-additions-0.5.3",
                 "hash": {
-                    "sha256": "b7dbe94114816344e082a7ec50780cc3b9d72af4aac6e2c2aca3ac25952c26d1"
+                    "sha256": "457326192edee4f5750bb34bf3365dd912fd8444de2f4de2ab03b37e73d26cc7"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1779769695000,
+        "lastUpdateTimestamp": 1780640110000,
         "releasePages": [
+            {
+                "body": "## 0.5.3 (06/04/2026)\r\n### Issues\r\n- [0.5.3] PVP victory animation crash\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/7\r\n### Changes\r\n- Restored the pvp victory animation steps to mba-pvp (see issue)\r\n- Deleted placeholder file mba-pvp - Copy.json",
+                "version": "0.5.3",
+                "timestamp": 1780640110000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.5.3"
+            },
+            {
+                "body": "## 0.5.2 (06/04/2026)\r\n### Changes\r\n- Added Krypek to author list in ccmod.json\r\n### Fixes\r\n- Merged PR from krypek: https://github.com/XenonA7/cc-multibakery-additions/pull/6\r\n  * Took CHANGE_VAR_BOOL steps out of FOR_EACH_PLAYER in mba-pvp\r\n  * Added delay to pvpBrake DO_ACTION steps to fix aim animation not playing due to damage stun\r\n  * Updated pvp logic FOR_EACH_PLAYER steps to only affect duel participants via \"players\": {\"varName\": \"pvp.players\"}",
+                "version": "0.5.2",
+                "timestamp": 1780636243000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.5.2"
+            },
+            {
+                "body": "## 0.5.1 (06/04/2026)\r\n- Minor tile improvements to room-2",
+                "version": "0.5.1",
+                "timestamp": 1780634329000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.5.1"
+            },
             {
                 "body": "## 0.5.0 (05/25/2026)\r\n### New Content\r\n- Added map co-op-dng/intro-rooms/room-2\r\n- Patched in the LINE_SHADOW option for element-turret enemies in which they shoot proxies containing shadows\r\n### Changes\r\n- Renamed prd-blank32x32.png to mba-blank32x32.png\r\n### Fixes\r\n- Various tile fixes for room-1\r\n- SHOW_CHOICE in dev room sign now uses 1 column\r\n- Fixed map path typo in dev room TELEPORT step",
                 "version": "0.5.0",
