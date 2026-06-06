@@ -360,7 +360,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.5.3",
+            "version": "0.5.4",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -390,23 +390,29 @@
             ],
             "prestart": "prestart.js",
             "dependencies": {
-                "cc-multibakery": ">=0.7.9",
+                "cc-multibakery": ">=0.8.0",
                 "cc-alybox": ">=1.1.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.5.3.zip",
-                "source": "cc-multibakery-additions-0.5.3",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.5.4.zip",
+                "source": "cc-multibakery-additions-0.5.4",
                 "hash": {
-                    "sha256": "457326192edee4f5750bb34bf3365dd912fd8444de2f4de2ab03b37e73d26cc7"
+                    "sha256": "b13326e09f3fe95e2f2d177325e1bc3e209767f909950d1e1566550726b708a2"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1780640110000,
+        "lastUpdateTimestamp": 1780767978000,
         "releasePages": [
+            {
+                "body": "## 0.5.4 (06/06/2026)\r\n### General\r\n- Multibakery dependency version increased to 0.8.0\r\n### Fixes\r\n- Changed pvpBrake timings to the XPC standard (0.4s initial wait)\r\n- Added the \"forceRunOnMap\": true setting to \"lights\" EventTrigger in mba-pvp to fix dance floor post-duel (Krypek PR)\r\n- Fixed prop level in mba-lobby",
+                "version": "0.5.4",
+                "timestamp": 1780767978000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.5.4"
+            },
             {
                 "body": "## 0.5.3 (06/04/2026)\r\n### Issues\r\n- [0.5.3] PVP victory animation crash\r\n  * https://github.com/XenonA7/cc-multibakery-additions/issues/7\r\n### Changes\r\n- Restored the pvp victory animation steps to mba-pvp (see issue)\r\n- Deleted placeholder file mba-pvp - Copy.json",
                 "version": "0.5.3",
