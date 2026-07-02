@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.3/cc-instanceinator-1.1.3.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.4/cc-instanceinator-1.1.4.ccmod",
                 "hash": {
-                    "sha256": "d2c5e02d44d4d474a31a3fe5c890d17cc987312c64c638ada5404be4267c40c1"
+                    "sha256": "397f5ab041163843f3fd4b17af6bbb75b0298dc48cfa88d7c55fc993a683f056"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1780678781000,
+        "lastUpdateTimestamp": 1783003204000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Export instance utility functions to instanceinator global namespace\n- Add tilingOrder config option for InstanceinatorInstance\n- Add noGuiUpdate ig.perf flag\n\n### Fixed\n\n- Fix cc-vim not working on additional instances\n- Clear instance unique caches on instance destroy\n- Close sound context on instance destroy\n- Disallow window fullscreen state change when creating instances",
+                "version": "1.1.4",
+                "timestamp": 1783003205000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.4"
+            },
             {
                 "body": "\n### Fixed\n\n- Fix rare tiling error when instance is not yet initialized\n- Fix fixes function getting called twice\n- Fix music volume lock getVolume and setVolume preserving this context on copy\n- Fix keyup events triggering on all visible instances\n- Fix ccloader2 error and warning messages being not visible",
                 "version": "1.1.3",
@@ -121,7 +127,7 @@
     "cc-krypek-lib": {
         "metadataCCMod": {
             "id": "cc-krypek-lib",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "title": "Krypek's library",
             "description": "Collection of steps, API's, developer tools",
             "repository": "https://github.com/krypciak/cc-krypek-lib",
@@ -139,17 +145,23 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.2.0/cc-krypek-lib-1.2.0.ccmod",
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.2.1/cc-krypek-lib-1.2.1.ccmod",
                 "hash": {
-                    "sha256": "df2aba845b8774378ff613cf4a3883753b823fedf83b41ef7924d1b8f1dfb823"
+                    "sha256": "b9dc016f11d569dcc03959b1c171c58d410801356c20b41121065a40d68a8610"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1775205417000,
+        "lastUpdateTimestamp": 1783003237000,
         "releasePages": [
             {
-                "body": "### Added\n\n- Add `game.entities.enemyType` read only variable\n- Add `tmp.pvpDamageFactor` variable for overriding pvp damage factor\n\n### Fixed\n\n- Fix `ig.EVENT_STEP.SET_VAR` value not getting copied on each call",
+                "body": "\n### Fixed\n\n- Fix memory-leak-fix.ts supressing errors in crossnode\n- Only apply the pvp damage factor override when pvp is active\n- Fix error in title-screen-skip.ts in case some other mod messes around with the title screen sequence",
+                "version": "1.2.1",
+                "timestamp": 1783003238000,
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.2.1"
+            },
+            {
+                "body": "### Added\r\n\r\n- Add `game.entities.enemyType` read only variable\r\n- Add `tmp.pvpDamageFactor` variable for overriding pvp damage factor\r\n- Add `ig.EVENT_STEP.SHOW_OBJECT_SLIDER_DIALOG`\r\n\r\n### Fixed\r\n\r\n- Fix `ig.EVENT_STEP.SET_VAR` value not getting copied on each call",
                 "version": "1.2.0",
                 "timestamp": 1775205418000,
                 "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.2.0"
@@ -183,7 +195,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.0",
+            "version": "0.8.1",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -208,15 +220,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.0/cc-multibakery-0.8.0.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.1/cc-multibakery-0.8.1.ccmod",
                 "hash": {
-                    "sha256": "c5f28fa6b302c22d4c3648f52c4cd45882a3f6f83943b8a7b4f1bedfbdd3701d"
+                    "sha256": "b751b87284d090413a26a03bc812bc46d8408d76113a6afce2a99ad947cf3eef"
                 }
             }
         ],
         "stars": 10,
-        "lastUpdateTimestamp": 1780678833000,
+        "lastUpdateTimestamp": 1783003349000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add option for showing server tps average label\n\n### Changed\n\n- Reset instanceinator instance counter on server destroy\n- Don't give iron stance circuits on godmode\n\n### Fixed\n\n- Fix title screen button gamepad focus logic\n- Fix ig.ENTITY.Prop permaEffect duplicating on remote\n- Fix combat art crashes:\n  - triblader2 SHOCK ATTACK B 1 Plasma Thrust\n  - triblader2 HEAT DASH B 2 Trailblazer\n  - Hexacast1 SHOCK ATTACK A 3 Stasis Storm\n  - Hexacast1 HEAT ATTACK B 3 Calamity Beacon\n- Don't save the game when running on remote server\n- Don't automaticaly save the game when automatic saving is disabled\n- Fix ig.ENTITY.TouchTrigger logic with multiple players\n- Fix sc.COMBAT_POI.ACTIVE_ENEMIES searching only in the ENEMY party",
+                "version": "0.8.1",
+                "timestamp": 1783003320000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.1"
+            },
             {
                 "body": "\n### Added\n\n- Add raw websocket network transport method (experimental, disabled by default)\n- Add forceRunOnMap option to EventTrigger\n\n### Changed\n\n- Decrease bundle size by removing dependency on http-server\n- Remove server ping from server list entry since it's misleading\n- Set pvp.lastWinPartyId to the only remaining party on pvp force end (due to player leaving)\n\n### Fixed\n\n- Fix some client actions not preserving event chain\n- Fix enemy pvp points rendering as blue instead of red\n- Initialize player in the correct moment when loading the map\n- Fix compatibility with lqm-joern-mod custom assault projectiles\n- Fix random error message on vanilla startup\n- Fix player state display for things like hp or money playing animation on map entry\n- Fix music unmuting for a split second when creating a new instance\n- Close crossnode repl on server destroy\n- Don't reset pvp state like lastWinPartyId or points after pvp end\n- Fix remote crash when referencing entities in vars in steps\n- Remove player collType getting set to NONE when in cutscene\n- Fix pvp hp bar disappearing on remote when the player is locked",
                 "version": "0.8.0",
