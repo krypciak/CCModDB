@@ -378,7 +378,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.6.1",
+            "version": "0.7.0",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -415,10 +415,10 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.6.1.zip",
-                "source": "cc-multibakery-additions-0.6.1",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.7.0.zip",
+                "source": "cc-multibakery-additions-0.7.0",
                 "hash": {
-                    "sha256": "9a6f365d08e29681731d4bd532798ad6a992e0450a385d70be7f72a272229e3d"
+                    "sha256": "27b1e62bea65b824435046eeb2e2ef46bd766c0599da93d18b9ab750c1095ef1"
                 }
             }
         ],
