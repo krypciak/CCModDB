@@ -378,7 +378,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.5.4",
+            "version": "0.6.1",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -415,16 +415,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.5.4.zip",
-                "source": "cc-multibakery-additions-0.5.4",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.6.1.zip",
+                "source": "cc-multibakery-additions-0.6.1",
                 "hash": {
-                    "sha256": "b13326e09f3fe95e2f2d177325e1bc3e209767f909950d1e1566550726b708a2"
+                    "sha256": "9a6f365d08e29681731d4bd532798ad6a992e0450a385d70be7f72a272229e3d"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1780767978000,
+        "lastUpdateTimestamp": 1783121482000,
         "releasePages": [
+            {
+                "body": "## 0.6.1 (07/02/2026)\r\n### Changes\r\n- Updated the XPC character selection sign in mba-lobby to support hexacast-lea",
+                "version": "0.6.1",
+                "timestamp": 1783053136000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.6.1"
+            },
+            {
+                "body": "## 0.6.0 (07/02/2026)\r\n### New Content\r\n- Added map co-op-dng/intro-rooms/room-3 (WIP)\r\n- Added effect file \\assets\\data\\effects\\mba-custom.json\r\n### Changes\r\n- Added fire props to all co-op dungeon OLPlatforms when extended\r\n- In mba-pvp, increased pvpBrake wait duration from 0.4 to 0.8 after hide effects\r\n- Added multibakery GODMODE option to mba-lobby cheat menu\r\n- mba-south:\r\n  * Added a menu option to set the minigame duration\r\n  * Added a menu option to set the enemy level\r\n  * Renamed tmp.radfish.duration to tmp.minigameDuration\r\n  * Added \"forceRunOnMap\": true to events Fishing Game and Fishing Done\r\n  * Moved minigame initialization steps out of menu event and into Fishing Game event\r\n  * Added \"targetOnSpawn\": true to the spawner enemy\r\n### Fixes\r\n- Made OLPs 1 tile taller (extended below) in room-1 and room-2 to fix the 1-pixel gap at the bottom when extended\r\n- Details tile fix in room-2\r\n- Fixed a CHANGE_VAR_NUMBER that should have been a CHANGE_VAR_BOOL in mba-pvp event pvpStart",
+                "version": "0.6.0",
+                "timestamp": 1783027552000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.6.0"
+            },
             {
                 "body": "## 0.5.4 (06/06/2026)\r\n### General\r\n- Multibakery dependency version increased to 0.8.0\r\n### Fixes\r\n- Changed pvpBrake timings to the XPC standard (0.4s initial wait)\r\n- Added the \"forceRunOnMap\": true setting to \"lights\" EventTrigger in mba-pvp to fix dance floor post-duel (Krypek PR)\r\n- Fixed prop level in mba-lobby",
                 "version": "0.5.4",
