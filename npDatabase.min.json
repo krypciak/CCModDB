@@ -133,7 +133,7 @@
     "cc-krypek-lib": {
         "metadataCCMod": {
             "id": "cc-krypek-lib",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "title": "Krypek's library",
             "description": "Collection of steps, API's, developer tools",
             "repository": "https://github.com/krypciak/cc-krypek-lib",
@@ -151,15 +151,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.2.2/cc-krypek-lib-1.2.2.ccmod",
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.2.3/cc-krypek-lib-1.2.3.ccmod",
                 "hash": {
-                    "sha256": "19d8f7dd27e5619935886fbbb0e3e8f949bbdae860501565df3e2e1c186fd2f4"
+                    "sha256": "d97cd685741d61542d9f74c4fffa587bb1929153df3d8e60a7655de2fe963ed9"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1785069189000,
+        "lastUpdateTimestamp": 1785612047000,
         "releasePages": [
+            {
+                "body": "\n### Fixed\n\n- Fix `ig.EVENT_STEP.SHOW_INPUT_DIALOG` not disabling the Ok button when text is invalid",
+                "version": "1.2.3",
+                "timestamp": 1785612048000,
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.2.3"
+            },
             {
                 "body": "\n### Fixed\n\n- Fix step macro file loading on CCLoader3",
                 "version": "1.2.2",
