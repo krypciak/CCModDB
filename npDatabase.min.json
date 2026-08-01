@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.4/cc-instanceinator-1.1.4.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.5/cc-instanceinator-1.1.5.ccmod",
                 "hash": {
-                    "sha256": "397f5ab041163843f3fd4b17af6bbb75b0298dc48cfa88d7c55fc993a683f056"
+                    "sha256": "4703c95dea18af61f619c3b709dd9c6751d124a4efa0def619119de9e7e79e7d"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1783003204000,
+        "lastUpdateTimestamp": 1785611540000,
         "releasePages": [
+            {
+                "body": "\n### Fixed\n\n- Fix crash when entering a map that immediately requires a loaded ig.JsonLoadable\n- Fix modmanager.gui.InputField not respecting instance focus",
+                "version": "1.1.5",
+                "timestamp": 1785611542000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.5"
+            },
             {
                 "body": "\n### Added\n\n- Export instance utility functions to instanceinator global namespace\n- Add tilingOrder config option for InstanceinatorInstance\n- Add noGuiUpdate ig.perf flag\n\n### Fixed\n\n- Fix cc-vim not working on additional instances\n- Clear instance unique caches on instance destroy\n- Close sound context on instance destroy\n- Disallow window fullscreen state change when creating instances",
                 "version": "1.1.4",
