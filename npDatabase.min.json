@@ -408,7 +408,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.7.0",
+            "version": "0.7.4",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -419,19 +419,23 @@
                 "ko_KR": "Multibakery Additions"
             },
             "description": {
-                "en_US": "Experimental additions to multibakery.",
-                "de_DE": "Experimental additions to multibakery.",
-                "fr_FR": "Experimental additions to multibakery.",
-                "zh_CN": "Experimental additions to multibakery.",
-                "zh_TW": "Experimental additions to multibakery.",
-                "ja_JP": "Experimental additions to multibakery.",
-                "ko_KR": "Experimental additions to multibakery."
+                "en_US": "Experimental content for multibakery.",
+                "de_DE": "Experimental content for multibakery.",
+                "fr_FR": "Experimental content for multibakery.",
+                "zh_CN": "Experimental content for multibakery.",
+                "zh_TW": "Experimental content for multibakery.",
+                "ja_JP": "Experimental content for multibakery.",
+                "ko_KR": "Experimental content for multibakery."
             },
             "icons": {
                 "24": "icon.png"
             },
             "repository": "https://github.com/XenonA7/cc-multibakery-additions",
-            "tags": [],
+            "tags": [
+                "fun",
+                "maps",
+                "dungeon"
+            ],
             "authors": [
                 "XenonA7",
                 "krypek"
@@ -445,16 +449,46 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.7.0.zip",
-                "source": "cc-multibakery-additions-0.7.0",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.7.4.zip",
+                "source": "cc-multibakery-additions-0.7.4",
                 "hash": {
-                    "sha256": "27b1e62bea65b824435046eeb2e2ef46bd766c0599da93d18b9ab750c1095ef1"
+                    "sha256": "e8b9fd599736b1e9460ea936aa4b7ed8338cf2addcb72a0d069954ab4fa9b8fd"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1783121482000,
+        "lastUpdateTimestamp": 1786941312000,
         "releasePages": [
+            {
+                "body": "## 0.7.4 (08/16/2026)\r\n### Changes\r\n- Updated room-4 parallax distance to be 1.05 instead of 0.95",
+                "version": "0.7.4",
+                "timestamp": 1786941312000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.7.4"
+            },
+            {
+                "body": "## 0.7.3 (08/16/2026)\r\n### Changes\r\n- Updated mod description and tag list\r\n- room-1\r\n  * Moved up platform1's fire prop by 2\r\n- room-2\r\n  * Moved up platform1's fire prop by 2\r\n  * Added a NPBLOCK HiddenBlock to fill the turret alcove\r\n  * Added a camera focus event when standing on the NW switch\r\n- room-3\r\n  * Moved up OLP fire props by 2\r\n- room-4\r\n  * Completed decorations and puzzle\r\n  * Deleted dev reset TeleportGround\r\n  * Replaced the switch3 OLPlatforms with JumpPanelFar for visual clarity\r\n  * Added NPFENCE HiddenBlock on the south WaterBubblePanel to prevent jumping on that pillar\r\n  * Added NPBLOCK WallHorizontal on Upper(2) below the SW ElementPole to prevent jumping down\r\n  * Added fence above SE ElementPole to prevent using it to hit south WaterBubblePanel\r\n  * Moved up the RESET_SPEED BallChanger and corresponding wall to make the timing more generous\r\n  * Shrunk the ice area by 1 tile off the top\r\n  * Added final OLPlatform at the end of the puzzle\r\n  * Added border fences on west and north upper raised areas\r\n  * Added FOR_EACH_PLAYER camera cutscene when bounce puzzle is complete",
+                "version": "0.7.3",
+                "timestamp": 1786940961000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.7.3"
+            },
+            {
+                "body": "## 0.7.2 (08/16/2026)\r\n### Changes\r\n- Replaced tmp.xpcDisableHoming instances in mba-pvp with new name tmp.xpcMultiplayerAdjustment",
+                "version": "0.7.2",
+                "timestamp": 1786863649000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.7.2"
+            },
+            {
+                "body": "## 0.7.1 (07/31/2026)\r\n### Changes\r\n- Overhauled the boss/enemy spawn dialogue menu in mba-testing\r\n- Added options to spawn heat golem and slimes to mba-testing\r\n- Added Z=-96 elevation level to mba-dev\r\n- Moved the super-meat test setup from mba-testing to mba-dev\r\n- Added hack effect when selecting \"Fill SP bar\" in mba-lobby and mba-testing\r\n### Fixes\r\n- Fixed Coll(2) in mba-testing\r\n- Fixed a tile layering issue in mba-outdoors",
+                "version": "0.7.1",
+                "timestamp": 1785562779000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.7.1"
+            },
+            {
+                "body": "## 0.7.0 (07/03/2026)\r\n### New Content\r\n- Added map co-op-dng/intro-rooms/room-4 (WIP, untested)\r\n### Changes\r\n- Turned off cameraInBounds for room-1, room-2, room-3",
+                "version": "0.7.0",
+                "timestamp": 1783121482000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.7.0"
+            },
             {
                 "body": "## 0.6.1 (07/02/2026)\r\n### Changes\r\n- Updated the XPC character selection sign in mba-lobby to support hexacast-lea",
                 "version": "0.6.1",
