@@ -213,7 +213,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.3",
+            "version": "0.8.4",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -238,15 +238,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.3/cc-multibakery-0.8.3.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.4/cc-multibakery-0.8.4.ccmod",
                 "hash": {
-                    "sha256": "7e8c5fe2fc45bad43ad32e557b2e76ec3bef9270c3ef5e0b2bd43b95a94d8f63"
+                    "sha256": "585a0deefae3713dad3bf4a7d9f68e02d6dd753c656d63fcd601f5760138ad8b"
                 }
             }
         ],
-        "stars": 10,
-        "lastUpdateTimestamp": 1785612027000,
+        "stars": 11,
+        "lastUpdateTimestamp": 1787174396000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add player buff remote state\n\n### Fixed\n\n- Disallow opening the quick menu on remote when player is performing action\n- Fix no door opening sound on remote\n- Fix no jumping sounds on remote\n- Fix footstep sounds playing when dashing on remote\n- Fix player lock status not working after entering a new map\n- Fix warnings on some combat arts\n- Fix wrong health bar color on remote for combatants with target\n- Fix cc-map-screenshot compatibility",
+                "version": "0.8.4",
+                "timestamp": 1787174397000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.4"
+            },
             {
                 "body": "\n### Added\n\n- Add option to enable experimental websocket network transport Settings->Server->Use websocket transport\n- Add ig.ENTITY.WaterBubblePanel state\n- Add remote combatant elemental inflict status bar state\n- Add remote combatant break bar state\n- Add item block timer remote sync\n\n### Fixed\n\n- Fix crash when an event call is called when a non player entity triggered it\n- Fix rare crash when entering a new map with EventTrigger with condition true\n- Fix invalid player head rendering on pvp gui when extendable-severed-heads is enabled\n- Fix duplicate player head rendering on pvp gui on remote\n- Disable \"Kick from party\" button when you're not a party owner\n- Fix pvp locking on party of 2 players where 1 is defeated and the other one leaves the game\n- Fix double party name change input dialog on remote\n- Fix crash when entering mba-testing for the first time\n- Fix pvp points desyncing on remote\n- Fix players being unaffected by time scales\n- Fix invalid party handling on player map change\n- Fix bombs and water bubbles phantoms on remote if remote player enters after bomb/water bubble has respawned at least once\n- Fix \"Break\" box gui not displaying on client instances and remote\n- Fix combatant status effects not decaying\n- Fix food icon not dying on remote when eating is interrupted\n- Fix attack circle glow only working for the first remote player on map\n- Fix sc.CombatProxyEntity sometimes getting killed before getting destroyed\n- Fix quick menu item button not activating when timer runs out when the menu is open",
                 "version": "0.8.3",
