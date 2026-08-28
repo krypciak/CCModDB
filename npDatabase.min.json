@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.5/cc-instanceinator-1.1.5.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.6/cc-instanceinator-1.1.6.ccmod",
                 "hash": {
-                    "sha256": "4703c95dea18af61f619c3b709dd9c6751d124a4efa0def619119de9e7e79e7d"
+                    "sha256": "64b271881351dd5c75ad774d4a1047f75b88cd4dbe82b1d84f79c6502ab31c15"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1785611540000,
+        "lastUpdateTimestamp": 1787932616000,
         "releasePages": [
+            {
+                "body": "\n### Changed\n\n- Don't display instance labels while taking a screenshot with cc-map-screenshot\n\n### Fixed\n\n- Improve CCModManager compatibility",
+                "version": "1.1.6",
+                "timestamp": 1787932617000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.6"
+            },
             {
                 "body": "\n### Fixed\n\n- Fix crash when entering a map that immediately requires a loaded ig.JsonLoadable\n- Fix modmanager.gui.InputField not respecting instance focus",
                 "version": "1.1.5",
