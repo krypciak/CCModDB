@@ -139,7 +139,7 @@
     "cc-krypek-lib": {
         "metadataCCMod": {
             "id": "cc-krypek-lib",
-            "version": "1.2.3",
+            "version": "1.3.0",
             "title": "Krypek's library",
             "description": "Collection of steps, API's, developer tools",
             "repository": "https://github.com/krypciak/cc-krypek-lib",
@@ -157,15 +157,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.2.3/cc-krypek-lib-1.2.3.ccmod",
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.3.0/cc-krypek-lib-1.3.0.ccmod",
                 "hash": {
-                    "sha256": "d97cd685741d61542d9f74c4fffa587bb1929153df3d8e60a7655de2fe963ed9"
+                    "sha256": "ed216ad5b1f09a925f78d3d9fbada39aeae22063cd91a382a4d2547a6d46551e"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1785612047000,
+        "stars": 1,
+        "lastUpdateTimestamp": 1787932718000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add volume silder for background map sounds to mod options",
+                "version": "1.3.0",
+                "timestamp": 1787932720000,
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.3.0"
+            },
             {
                 "body": "\n### Fixed\n\n- Fix `ig.EVENT_STEP.SHOW_INPUT_DIALOG` not disabling the Ok button when text is invalid",
                 "version": "1.2.3",
