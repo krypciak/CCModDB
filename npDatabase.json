@@ -225,7 +225,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.5",
+            "version": "0.8.6",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -250,15 +250,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.5/cc-multibakery-0.8.5.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.6/cc-multibakery-0.8.6.ccmod",
                 "hash": {
-                    "sha256": "f2a095d06459cd001298e27906f166e15c784eca982574c37da5ed2510da6a16"
+                    "sha256": "0983f4ff69b6482684413259fe9da10c3b582915e5f7f1a6fe6601026e996c5b"
                 }
             }
         ],
         "stars": 11,
-        "lastUpdateTimestamp": 1788026040000,
+        "lastUpdateTimestamp": 1788970015000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add player input latency measurement (only available in PROFILE builds)\n- Add player input latency display (only available in PROFILE builds)\n- Add packet send/receive artificial latency sliders (only available in PROFILE builds)\n\n### Changed\n\n- Enable PROILE build flag for release builds (temporary)\n- Improve base player input latency by about ~20 ms\n- Limit remote player input queue to 3 frames\n- Enable websocket transport by default on startup",
+                "version": "0.8.6",
+                "timestamp": 1788970016000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.6"
+            },
             {
                 "body": "\n### Added\n\n- Add remote sound for ig.ENTITY.RegenDestruct\n- Add remote sound for ig.ENTITY.Destructible\n- Add remote sound for ig.ENTITY.BounceSwitch\n- Add remote sound for ig.ENTITY.BounceBlock\n- Add remote sound for ig.ENTITY.BallChanger\n- Add seperate nax-ccuilib quick ring configs for each client\n- Add support for custom character head icons in the map menu\n\n### Fixed\n\n- Fix rare remote crash when an event is triggered on an killed entity\n- Fix ig.ENTITY.OneTimeSwitch with activeTime rendering incorrectly on remote\n- Fix remote crash when player re-enters the same map immediately\n- Fix remote crash on Gatling Arctillery\n- Improve nax-ccuilib widgets compatibility on remote\n- Fix hit numbers sometimes having a different color on remote\n- Fix dead entities not being killed on remote when joining after the entitiy's death\n- Fix physics server closing connection when multiple players joined from one connection and only one player leaves\n- Disallow duplicate player party titles\n- Fix duplicate interact entries on remote sometimes\n- Fix physics server not focusing gui's when hovering with mouse after using keyboard to navigate menus\n- Fix websocket transport not working on windows\n- Fix crashes related to ig.GuiHook#doStateTransition on mismatched instance",
                 "version": "0.8.5",
