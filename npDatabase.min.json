@@ -432,7 +432,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.7.4",
+            "version": "0.8.0",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -466,23 +466,30 @@
             ],
             "prestart": "prestart.js",
             "dependencies": {
-                "cc-multibakery": ">=0.8.0",
-                "cc-alybox": ">=1.1.0"
+                "cc-multibakery": ">=0.8.5",
+                "cc-alybox": ">=1.1.0",
+                "post-game": ">=1.4.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.7.4.zip",
-                "source": "cc-multibakery-additions-0.7.4",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.8.0.zip",
+                "source": "cc-multibakery-additions-0.8.0",
                 "hash": {
-                    "sha256": "e8b9fd599736b1e9460ea936aa4b7ed8338cf2addcb72a0d069954ab4fa9b8fd"
+                    "sha256": "ff6ef5b8114cc37af64fca5c31e392dc4fe083d7f8f517aa10d3b97445128b90"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1786941312000,
+        "lastUpdateTimestamp": 1788311783000,
         "releasePages": [
+            {
+                "body": "## 0.8.0 (09/01/2026)\r\n### General\r\n- Added dependency for New Home DLC\r\n- Bumped multibakery minimum dependency version to 0.8.5\r\n### New Content\r\n- Added 10 new PVP maps accessible from mba-pvp\r\n  * multibakery/pvp/vt-f99\r\n  * multibakery/pvp/space\r\n  * multibakery/pvp/beach-ape\r\n  * multibakery/pvp/beach-temple\r\n  * multibakery/pvp/gynthar\r\n  * multibakery/pvp/tree-midboss\r\n  * multibakery/pvp/hideout-hexa\r\n  * multibakery/pvp/tri-league\r\n  * multibakery/pvp/tri-ice\r\n  * multibakery/pvp/ultimate-pvp\r\n### Changes\r\n- Added notes on BarrierConfig settings in mba-pvp map file\r\n- Temporary WavePushPullBlock added to template map\r\n### Fixes\r\n- Fixed d2 destination marker in mba-lobby\r\n- Fixed PVP damage factor update AR_MSG not showing for all players in pvp maps\r\n- Fixed pvp centerpoint position in mba-pvp\r\n- Manually merged Krypek fix for CLEAR_AR_MSG issue in mba-testing (https://github.com/XenonA7/cc-multibakery-additions/pull/9)",
+                "version": "0.8.0",
+                "timestamp": 1788311783000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.8.0"
+            },
             {
                 "body": "## 0.7.4 (08/16/2026)\r\n### Changes\r\n- Updated room-4 parallax distance to be 1.05 instead of 0.95",
                 "version": "0.7.4",
