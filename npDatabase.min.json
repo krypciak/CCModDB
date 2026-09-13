@@ -225,7 +225,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.6",
+            "version": "0.8.7",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -250,15 +250,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.6/cc-multibakery-0.8.6.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.7/cc-multibakery-0.8.7.ccmod",
                 "hash": {
-                    "sha256": "0983f4ff69b6482684413259fe9da10c3b582915e5f7f1a6fe6601026e996c5b"
+                    "sha256": "9b173656b44f822c1803aaaacd901cd38405f74f9c5f980bb0265cb786e73027"
                 }
             }
         ],
         "stars": 11,
-        "lastUpdateTimestamp": 1788970015000,
+        "lastUpdateTimestamp": 1789317206000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add ig.ENTITY.WavePushPullBlock remote state\n- Add ig.ENTITY.WaveTeleport remote state\n- Add ig.ENTITY.RotateBlocker remote state\n- Add ig.ENTITY.PushPullDest remote state\n- Add ig.ENTITY.Compressor remote state\n- Add sc.CompressedWaveEntity remote state\n- Add sc.CompressedShockEntity remote state\n\n### Changed\n\n- Move player icon on map menu display to menu-ui-replacer\n\n### Fixed\n\n- Fix crash on wave ball throw into ig.ENTITY.WaveTeleport\n- Disable push interact on push blocks after they enter their destination\n- Fix crash when ig.ENTITY.Compressor has followCamera flag on",
+                "version": "0.8.7",
+                "timestamp": 1789317207000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.7"
+            },
             {
                 "body": "\n### Added\n\n- Add player input latency measurement (only available in PROFILE builds)\n- Add player input latency display (only available in PROFILE builds)\n- Add packet send/receive artificial latency sliders (only available in PROFILE builds)\n\n### Changed\n\n- Enable PROILE build flag for release builds (temporary)\n- Improve base player input latency by about ~20 ms\n- Limit remote player input queue to 3 frames\n- Enable websocket transport by default on startup",
                 "version": "0.8.6",
