@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.6/cc-instanceinator-1.1.6.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.7/cc-instanceinator-1.1.7.ccmod",
                 "hash": {
-                    "sha256": "64b271881351dd5c75ad774d4a1047f75b88cd4dbe82b1d84f79c6502ab31c15"
+                    "sha256": "195a8449f49b0484ec6ac210907c0a758483223128b73fe7413f52aaafa73b0b"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1787932616000,
+        "lastUpdateTimestamp": 1790189757000,
         "releasePages": [
+            {
+                "body": "\n### Fixed\n\n- Copy custom game addons from mods to new instances\n- Fix onLoadableComplete leaking to other instances",
+                "version": "1.1.7",
+                "timestamp": 1790189758000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.7"
+            },
             {
                 "body": "\n### Changed\n\n- Don't display instance labels while taking a screenshot with cc-map-screenshot\n\n### Fixed\n\n- Improve CCModManager compatibility",
                 "version": "1.1.6",
