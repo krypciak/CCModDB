@@ -231,7 +231,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.7",
+            "version": "0.8.8",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -246,25 +246,31 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.1.4",
-                "nax-ccuilib": ">=1.5.5",
-                "ccmodmanager": ">=1.1.2",
-                "cc-krypek-lib": ">=1.2.1"
+                "cc-instanceinator": ">=1.1.7",
+                "nax-ccuilib": ">=1.5.8",
+                "ccmodmanager": ">=1.2.1",
+                "cc-krypek-lib": ">=1.3.0"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.7/cc-multibakery-0.8.7.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.8/cc-multibakery-0.8.8.ccmod",
                 "hash": {
-                    "sha256": "9b173656b44f822c1803aaaacd901cd38405f74f9c5f980bb0265cb786e73027"
+                    "sha256": "d1de2cc7d38ca220ef935146c001eef961a06a936fee27255941e8330df386e5"
                 }
             }
         ],
-        "stars": 11,
-        "lastUpdateTimestamp": 1789317206000,
+        "stars": 12,
+        "lastUpdateTimestamp": 1790189800000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add seamless overworld feature (enable in Settings->Client)\n- Add AR Box message popup with player destination on player teleport\n\n### Changed\n\n- Remove \"Map switch delay\" option in favor of \"No map switch delay\" option\n\n### Fixed\n\n- Respect custom teleport time delay (for example longer delay when switching between areas)\n- Fix leave server button not working",
+                "version": "0.8.8",
+                "timestamp": 1790189802000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.8"
+            },
             {
                 "body": "\n### Added\n\n- Add ig.ENTITY.WavePushPullBlock remote state\n- Add ig.ENTITY.WaveTeleport remote state\n- Add ig.ENTITY.RotateBlocker remote state\n- Add ig.ENTITY.PushPullDest remote state\n- Add ig.ENTITY.Compressor remote state\n- Add sc.CompressedWaveEntity remote state\n- Add sc.CompressedShockEntity remote state\n\n### Changed\n\n- Move player icon on map menu display to menu-ui-replacer\n\n### Fixed\n\n- Fix crash on wave ball throw into ig.ENTITY.WaveTeleport\n- Disable push interact on push blocks after they enter their destination\n- Fix crash when ig.ENTITY.Compressor has followCamera flag on",
                 "version": "0.8.7",
