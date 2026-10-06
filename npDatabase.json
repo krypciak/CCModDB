@@ -145,13 +145,14 @@
     "cc-krypek-lib": {
         "metadataCCMod": {
             "id": "cc-krypek-lib",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "title": "Krypek's library",
-            "description": "Collection of steps, API's, developer tools",
+            "description": "Collection of steps, API's, developer tools. QoL features: title screen skip, map background sounds volume slider, click on map to teleport",
             "repository": "https://github.com/krypciak/cc-krypek-lib",
             "tags": [
-                "dev",
-                "library"
+                "QoL",
+                "library",
+                "dev"
             ],
             "authors": "krypek",
             "dependencies": {
@@ -163,15 +164,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.3.0/cc-krypek-lib-1.3.0.ccmod",
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.4.0/cc-krypek-lib-1.4.0.ccmod",
                 "hash": {
-                    "sha256": "ed216ad5b1f09a925f78d3d9fbada39aeae22063cd91a382a4d2547a6d46551e"
+                    "sha256": "2af9db1816289fb40d7fd88489999b63cee8a8a5f5472d3cf579f00086d5a6e8"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1787932718000,
+        "lastUpdateTimestamp": 1791301441000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add \"Teleport anywhere\" cheat from dmitmel's crosscode-tweak-pack\n- Add ig.ACTION_STEP.CALL_EVENT action step\n\n### Fixed\n\n- Fix vanilla bug where sc.NPCRunnerEntity that exit though ig.ENTITY.TeleportGround never despawn",
+                "version": "1.4.0",
+                "timestamp": 1791301443000,
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.4.0"
+            },
             {
                 "body": "\n### Added\n\n- Add volume silder for background map sounds to mod options",
                 "version": "1.3.0",
