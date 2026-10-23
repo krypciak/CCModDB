@@ -238,7 +238,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.9",
+            "version": "0.8.10",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -263,15 +263,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.9/cc-multibakery-0.8.9.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.10/cc-multibakery-0.8.10.ccmod",
                 "hash": {
-                    "sha256": "1a715d4a67d0fb6a6ddb174ba111df0f73fb241fc7f9fd045985dc78518a1947"
+                    "sha256": "73233ef655eb18bf72e00029b2e6ee07ce57657e2191b6879ccb2a7c79be6529"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1791389290000,
+        "lastUpdateTimestamp": 1792774603000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add `ig.EVENT_STEP.FOR_EACH_PLAYER` option `runType`\n\n### Changed\n\n- Change `ig.EVENT_STEP.FOR_EACH_PLAYER` default `runType` value to `INTERRUPTABLE`",
+                "version": "0.8.10",
+                "timestamp": 1792774604000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.10"
+            },
             {
                 "body": "\n### Added\n\n- Add partial support for seamless overworld on remote\n- Add support for teleport arboxes on remote\n- Add player join animation\n- Send remote crash data to physics server\n- Add player leave animation\n- Add player crash animation\n- Add remote teleport color syncing (fix teleport color not being white on area changes)\n- Add more options for controlling when the teleport popup should appear\n\n### Changed\n\n- Force player face to south on server join\n- Iterate over all players for ig.CollTools.isInScreen instead of just always returning true\n\n### Fixed\n\n- Fix entity spawn ordered event not working\n- Fix crash when remote has more than two clients on different maps and one leaves\n- Fix draw on physics server being disabled sometimes after last remote leaves\n- Fix remote crash when reentering a map sometimes\n- Don't send sc.NPCRunnerEntity dust effects to remote\n- Fix shadow rendering issues when Seamless overworld is enabled\n- Fix issues and crashes related with navigation maps\n- Fix duplicate player pvp hp bars\n\n### Removed\n\n- Remove socket.io net transport",
                 "version": "0.8.9",
