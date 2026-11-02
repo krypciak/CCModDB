@@ -475,7 +475,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.8.0",
+            "version": "0.10.0",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -509,7 +509,7 @@
             ],
             "prestart": "prestart.js",
             "dependencies": {
-                "cc-multibakery": ">=0.8.5",
+                "cc-multibakery": ">=0.8.10",
                 "cc-alybox": ">=1.1.0",
                 "post-game": ">=1.4.0"
             }
@@ -517,16 +517,34 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.8.0.zip",
-                "source": "cc-multibakery-additions-0.8.0",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.10.0.zip",
+                "source": "cc-multibakery-additions-0.10.0",
                 "hash": {
-                    "sha256": "ff6ef5b8114cc37af64fca5c31e392dc4fe083d7f8f517aa10d3b97445128b90"
+                    "sha256": "ed501913e3dd6500526cd2a57171b6dc211bf5be49f954cbf20254111031032f"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1788311783000,
+        "lastUpdateTimestamp": 1793165051000,
         "releasePages": [
+            {
+                "body": "## 0.10.0 (10/27/2026)\r\n### New Content\r\n- Added map: co-op-dng/nw/g/room-nw3\r\n### Changes\r\n- New ice layout for g.room-nw2\r\n- Added reset switch to g.room-nw2\r\n- Reverted room-3 event FightStart to not use \"runType\" argument\r\n- Tweaked enemy spawn pacing in room-3\r\n### Fixes\r\n- Fixed incorrect X size for AutumnBack layers in map room-nw2\r\n- Deleted unused WaterShadow layer in map room-nw2\r\n- Fixed room-3 event FightCantStart able to trigger when map.counterPost is true",
+                "version": "0.10.0",
+                "timestamp": 1793165051000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.10.0"
+            },
+            {
+                "body": "## 0.9.0 (10/24/2026)\r\n### General\r\n- Bumped multibakery minimum dependency version to 0.8.10\r\n### New Content\r\n- Added map: co-op-dng/nw/g/room-nw1\r\n- Added map: co-op-dng/nw/g/room-nw2\r\n### Changes\r\n- Experimental: Added \"runType\": \"CUTSCENE\" to FOR_EACH_PLAYER in room-3 event FightStart\r\n- Removed teleporter to Multibakery dev room from Rookie Harbor, moved to MBA dev room\r\n- Disabled the debug WatterBubblePanel in room-3\r\n- Set cameraInBounds true for room-4\r\n- Added a COLD symbol to one of the ground positions in room-4",
+                "version": "0.9.0",
+                "timestamp": 1792907106000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.9.0"
+            },
+            {
+                "body": "## 0.8.1 (10/20/2026)\r\n### Changes\r\n- room-3\r\n  * Completed fight functionality, the map is now complete\r\n  * Implemented a safety check for all players being in the arena before the fight can start\r\n  * Added a camera focus event when standing on raised OLP1\r\n  * Changed tmp.fightLevel to map.fightLevel (it now sets this permanently upon first room entry)\r\n  * The \"Absent players!\" SHOW_AR_MSG is now inside FOR_EACH_PLAYER\r\n  * Added a vanilla-style EnemySpawner to re-populate the arena with enemies after the scripted fight is over\r\n### Fixes\r\n- Fixed Collision(5) layer for west exit in autumn/path-7-1\r\n- Fixed a shadow tiling issue in mba-testing",
+                "version": "0.8.1",
+                "timestamp": 1792552661000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.8.1"
+            },
             {
                 "body": "## 0.8.0 (09/01/2026)\r\n### General\r\n- Added dependency for New Home DLC\r\n- Bumped multibakery minimum dependency version to 0.8.5\r\n### New Content\r\n- Added 10 new PVP maps accessible from mba-pvp\r\n  * multibakery/pvp/vt-f99\r\n  * multibakery/pvp/space\r\n  * multibakery/pvp/beach-ape\r\n  * multibakery/pvp/beach-temple\r\n  * multibakery/pvp/gynthar\r\n  * multibakery/pvp/tree-midboss\r\n  * multibakery/pvp/hideout-hexa\r\n  * multibakery/pvp/tri-league\r\n  * multibakery/pvp/tri-ice\r\n  * multibakery/pvp/ultimate-pvp\r\n### Changes\r\n- Added notes on BarrierConfig settings in mba-pvp map file\r\n- Temporary WavePushPullBlock added to template map\r\n### Fixes\r\n- Fixed d2 destination marker in mba-lobby\r\n- Fixed PVP damage factor update AR_MSG not showing for all players in pvp maps\r\n- Fixed pvp centerpoint position in mba-pvp\r\n- Manually merged Krypek fix for CLEAR_AR_MSG issue in mba-testing (https://github.com/XenonA7/cc-multibakery-additions/pull/9)",
                 "version": "0.8.0",
