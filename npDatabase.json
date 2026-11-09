@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.7",
+            "version": "1.1.8",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.7/cc-instanceinator-1.1.7.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.8/cc-instanceinator-1.1.8.ccmod",
                 "hash": {
-                    "sha256": "195a8449f49b0484ec6ac210907c0a758483223128b73fe7413f52aaafa73b0b"
+                    "sha256": "89e4972a265c972ec9b68c3650f791f19ad52156a8931da1c2461a8f745a1dbd"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1790189757000,
+        "lastUpdateTimestamp": 1794251915000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add instance label for displaying map name (disabled by default)\n\n### Fixed\n\n- Fix sc.savePreset missing on copied instances",
+                "version": "1.1.8",
+                "timestamp": 1794251916000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.8"
+            },
             {
                 "body": "\n### Fixed\n\n- Copy custom game addons from mods to new instances\n- Fix onLoadableComplete leaking to other instances",
                 "version": "1.1.7",
@@ -145,7 +151,7 @@
     "cc-krypek-lib": {
         "metadataCCMod": {
             "id": "cc-krypek-lib",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "title": "Krypek's library",
             "description": "Collection of steps, API's, developer tools. QoL features: title screen skip, map background sounds volume slider, click on map to teleport",
             "repository": "https://github.com/krypciak/cc-krypek-lib",
@@ -164,15 +170,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.4.0/cc-krypek-lib-1.4.0.ccmod",
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.4.1/cc-krypek-lib-1.4.1.ccmod",
                 "hash": {
-                    "sha256": "2af9db1816289fb40d7fd88489999b63cee8a8a5f5472d3cf579f00086d5a6e8"
+                    "sha256": "e441370f88633d8b24506ad9efdbf30fe46643aa1099fe5136615aaa78c2e359"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1791301441000,
+        "lastUpdateTimestamp": 1794251882000,
         "releasePages": [
+            {
+                "body": "\n### Changed\n\n- Change `ig.ACTION_STEP.CALL_EVENT` default `runType` value to `INTERRUPTABLE`",
+                "version": "1.4.1",
+                "timestamp": 1794251883000,
+                "url": "https://github.com/krypciak/cc-krypek-lib/releases/tag/v1.4.1"
+            },
             {
                 "body": "\n### Added\n\n- Add \"Teleport anywhere\" cheat from dmitmel's crosscode-tweak-pack\n- Add ig.ACTION_STEP.CALL_EVENT action step\n\n### Fixed\n\n- Fix vanilla bug where sc.NPCRunnerEntity that exit though ig.ENTITY.TeleportGround never despawn",
                 "version": "1.4.0",
@@ -238,7 +250,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.10",
+            "version": "0.8.11",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -253,25 +265,31 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.1.7",
+                "cc-instanceinator": ">=1.1.8",
                 "nax-ccuilib": ">=1.5.8",
                 "ccmodmanager": ">=1.2.1",
-                "cc-krypek-lib": ">=1.3.0"
+                "cc-krypek-lib": ">=1.4.1"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.10/cc-multibakery-0.8.10.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.11/cc-multibakery-0.8.11.ccmod",
                 "hash": {
-                    "sha256": "73233ef655eb18bf72e00029b2e6ee07ce57657e2191b6879ccb2a7c79be6529"
+                    "sha256": "6295d2f5262b524199d8ddb231808128aa1868c9394eeeda873b29cebbc9dda5"
                 }
             }
         ],
-        "stars": 12,
-        "lastUpdateTimestamp": 1792774603000,
+        "stars": 13,
+        "lastUpdateTimestamp": 1794252057000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add `ig.ENTITY.ElementPoleDest` support\n- Add `ig.ENTITY.KeyPanel` support\n- Add `ig.ENTITY.Scalable` remote state\n\n### Fixed\n\n- Fix player being invisible when \"Enable join animation\" option is off\n- Fix remote crash when cc-vim keybinding is pressed\n- Fix camera getting stuck after using Lightning Prophecy on remote\n- Fix `ig.ENTITY.WaveTeleport` smooth camera transition not playing on teleport\n- Fix remote crash on events that use `call.` variables\n- Fix `ig.ENTITY.BounceBlock` not hiding properly on remote\n- Fix `sc.WaterBubbleEntity` duplication on remote when `ig.ENTITY.KeyPanel` is shown after map load\n- Fix `ig.ENTITY.Destructible` variable increases not preserving event chain\n- Fix light handles timing out too fast",
+                "version": "0.8.11",
+                "timestamp": 1794252058000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.11"
+            },
             {
                 "body": "\n### Added\n\n- Add `ig.EVENT_STEP.FOR_EACH_PLAYER` option `runType`\n\n### Changed\n\n- Change `ig.EVENT_STEP.FOR_EACH_PLAYER` default `runType` value to `INTERRUPTABLE`",
                 "version": "0.8.10",
