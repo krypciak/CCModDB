@@ -493,7 +493,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.10.0",
+            "version": "0.10.2",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -527,7 +527,7 @@
             ],
             "prestart": "prestart.js",
             "dependencies": {
-                "cc-multibakery": ">=0.8.10",
+                "cc-multibakery": ">=0.8.11",
                 "cc-alybox": ">=1.1.0",
                 "post-game": ">=1.4.0"
             }
@@ -535,16 +535,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.10.0.zip",
-                "source": "cc-multibakery-additions-0.10.0",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.10.2.zip",
+                "source": "cc-multibakery-additions-0.10.2",
                 "hash": {
-                    "sha256": "ed501913e3dd6500526cd2a57171b6dc211bf5be49f954cbf20254111031032f"
+                    "sha256": "707286c8456245d39cb724a167271186916c0a56af05f00b1343cddffb8b21f4"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1793165051000,
+        "lastUpdateTimestamp": 1794326831000,
         "releasePages": [
+            {
+                "body": "## 0.10.2 (11/10/2026)\r\n### General\r\n- Bumped multibakery minimum dependency version to 0.8.11\r\n### New Content\r\n- Added an interaction to sit on the couch in mba-lobby (thanks to QuieType for the initial concept)\r\n- Implemented platform collapse feature (each one has 1 in 5 chance each pvpBrake) for map multibakery.pvp.vt-f99\r\n### Changes\r\n- Finalized map g.room-nw4\r\n- Updated fence layout in g.room-nw2\r\n- Removed debug switches in map multibakery.pvp.vt-f99\r\n### Fixes\r\n- Fixed OLP1 fire prop alignment in g.room-nw4",
+                "version": "0.10.2",
+                "timestamp": 1794326831000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.10.2"
+            },
+            {
+                "body": "## 0.10.1 (11/02/2026)\r\n### New Content\r\n- Added map: co-op-dng/nw/g/room-nw4 (unfinished)\r\n### Changes\r\n- Updated README.md section on how to access maps in-game\r\n- Added \"red wall\" scalableprops to co-op-dng.template\r\n- Deleted map \"template - Copy.json\"\r\n- Reduced octopus enemy count from 3 to 2 in final wave of g.room-nw3\r\n- Minor decoration adjustment in g.room-nw1",
+                "version": "0.10.1",
+                "timestamp": 1793657003000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.10.1"
+            },
             {
                 "body": "## 0.10.0 (10/27/2026)\r\n### New Content\r\n- Added map: co-op-dng/nw/g/room-nw3\r\n### Changes\r\n- New ice layout for g.room-nw2\r\n- Added reset switch to g.room-nw2\r\n- Reverted room-3 event FightStart to not use \"runType\" argument\r\n- Tweaked enemy spawn pacing in room-3\r\n### Fixes\r\n- Fixed incorrect X size for AutumnBack layers in map room-nw2\r\n- Deleted unused WaterShadow layer in map room-nw2\r\n- Fixed room-3 event FightCantStart able to trigger when map.counterPost is true",
                 "version": "0.10.0",
