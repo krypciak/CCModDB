@@ -3,5 +3,5 @@
     "cc-instanceinator": { "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.8/cc-instanceinator-1.1.8.ccmod" },
     "cc-variable-charge-time": { "url": "https://github.com/krypciak/cc-variable-charge-time/releases/download/v1.0.0/cc-variable-charge-time-1.0.0.ccmod" },
     "cc-krypek-lib": { "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.4.1/cc-krypek-lib-1.4.1.ccmod" },
-    "cc-multibakery-additions": { "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.10.2.zip", "source": "cc-multibakery-additions-0.10.2" }
+    "cc-multibakery-additions": { "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.11.0.zip", "source": "cc-multibakery-additions-0.11.0" }
 }

@@ -493,7 +493,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.10.2",
+            "version": "0.11.0",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -535,16 +535,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.10.2.zip",
-                "source": "cc-multibakery-additions-0.10.2",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.11.0.zip",
+                "source": "cc-multibakery-additions-0.11.0",
                 "hash": {
-                    "sha256": "707286c8456245d39cb724a167271186916c0a56af05f00b1343cddffb8b21f4"
+                    "sha256": "2144f6ea49223719ead9664c93467f6e91dfe3e0dfa9e6a76b1499dc879ebe69"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1794326831000,
+        "lastUpdateTimestamp": 1794427291000,
         "releasePages": [
+            {
+                "body": "## 0.11.0 (11/11/2026)\r\n### New Content\r\n- Added map: co-op-dng/nw/g/room-nw11\r\n### Changes\r\n- Increased falling platform window from 15 seconds to 30 seconds in map multibakery.pvp.vt-f99\r\n- Improved fire prop alignment in map intro-rooms.room-1\r\n### Fixes\r\n- Fixed glow layering issue on map g.room-nw4",
+                "version": "0.11.0",
+                "timestamp": 1794427291000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.11.0"
+            },
             {
                 "body": "## 0.10.2 (11/10/2026)\r\n### General\r\n- Bumped multibakery minimum dependency version to 0.8.11\r\n### New Content\r\n- Added an interaction to sit on the couch in mba-lobby (thanks to QuieType for the initial concept)\r\n- Implemented platform collapse feature (each one has 1 in 5 chance each pvpBrake) for map multibakery.pvp.vt-f99\r\n### Changes\r\n- Finalized map g.room-nw4\r\n- Updated fence layout in g.room-nw2\r\n- Removed debug switches in map multibakery.pvp.vt-f99\r\n### Fixes\r\n- Fixed OLP1 fire prop alignment in g.room-nw4",
                 "version": "0.10.2",
