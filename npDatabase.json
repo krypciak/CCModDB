@@ -493,7 +493,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.11.0",
+            "version": "0.12.0",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -535,16 +535,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.11.0.zip",
-                "source": "cc-multibakery-additions-0.11.0",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.12.0.zip",
+                "source": "cc-multibakery-additions-0.12.0",
                 "hash": {
-                    "sha256": "2144f6ea49223719ead9664c93467f6e91dfe3e0dfa9e6a76b1499dc879ebe69"
+                    "sha256": "1b0c85d386d81d8d74f718a1400e45d1a1ec46fb21cad4b6eea8c2cc9552e43e"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1794427291000,
+        "lastUpdateTimestamp": 1794665620000,
         "releasePages": [
+            {
+                "body": "## 0.12.0 (11/14/2026)\r\n### New Content\r\n- Added pvp map: multibakery.pvp.co-op-room-3\r\n- Added map: co-op-dng/nw/g/room-nw5\r\n- Added map editor support for co-op-outer style: \\map-editor\\map-styles.json\r\n- Added co-op-outer files for fence props and fence scale-props\r\n### Changes\r\n- Added moving shadows under the northeast platforms in map g.room-nw11\r\n- Adjusted door sprites in co-op-outer style to match the back wall color of the co-op-fungeon-outer tileset\r\n- Unified south-facing doorframe sprite color to use dark variant for co-op-outer style\r\n### Fixes\r\n- Added tile gap in wall behind door d2 in map g.room-nw11\r\n- Changed wallY from 0 to 1 for short stone walls in map mba-outdoors (fixes layering issue when player intersects while pulling block)",
+                "version": "0.12.0",
+                "timestamp": 1794665620000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.12.0"
+            },
             {
                 "body": "## 0.11.0 (11/11/2026)\r\n### New Content\r\n- Added map: co-op-dng/nw/g/room-nw11\r\n### Changes\r\n- Increased falling platform window from 15 seconds to 30 seconds in map multibakery.pvp.vt-f99\r\n- Improved fire prop alignment in map intro-rooms.room-1\r\n### Fixes\r\n- Fixed glow layering issue on map g.room-nw4",
                 "version": "0.11.0",
