@@ -250,7 +250,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.11",
+            "version": "0.8.12",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -275,15 +275,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.11/cc-multibakery-0.8.11.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.12/cc-multibakery-0.8.12.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "6295d2f5262b524199d8ddb231808128aa1868c9394eeeda873b29cebbc9dda5"
+                    "sha256": "110974a557de037d53d2c7020cbbebcb478df07777e09a6b52d360ec08a303d2"
                 }
             }
         ],
         "stars": 13,
-        "lastUpdateTimestamp": 1794252057000,
+        "lastUpdateTimestamp": 1795037903000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add `ig.ENTITY.TeslaCoil` remote state\n- Add elevator support\n\n### Fixed\n\n- Fixed crash on Hexacast lvl 2 neutral throw art Arcane Volley\n- Fix remote map menu world view not being enterable\n- Fix `ig.ENTITY.TeslaCoil` crash on activate\n- Remove ARBox'es that target entities from previous map when switching to a new map",
+                "version": "0.8.12",
+                "timestamp": 1795037905000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.12"
+            },
             {
                 "body": "\n### Added\n\n- Add `ig.ENTITY.ElementPoleDest` support\n- Add `ig.ENTITY.KeyPanel` support\n- Add `ig.ENTITY.Scalable` remote state\n\n### Fixed\n\n- Fix player being invisible when \"Enable join animation\" option is off\n- Fix remote crash when cc-vim keybinding is pressed\n- Fix camera getting stuck after using Lightning Prophecy on remote\n- Fix `ig.ENTITY.WaveTeleport` smooth camera transition not playing on teleport\n- Fix remote crash on events that use `call.` variables\n- Fix `ig.ENTITY.BounceBlock` not hiding properly on remote\n- Fix `sc.WaterBubbleEntity` duplication on remote when `ig.ENTITY.KeyPanel` is shown after map load\n- Fix `ig.ENTITY.Destructible` variable increases not preserving event chain\n- Fix light handles timing out too fast",
                 "version": "0.8.11",
