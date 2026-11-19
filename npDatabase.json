@@ -500,7 +500,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.12.0",
+            "version": "0.13.1",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -511,13 +511,13 @@
                 "ko_KR": "Multibakery Additions"
             },
             "description": {
-                "en_US": "Experimental content for multibakery.",
-                "de_DE": "Experimental content for multibakery.",
-                "fr_FR": "Experimental content for multibakery.",
-                "zh_CN": "Experimental content for multibakery.",
-                "zh_TW": "Experimental content for multibakery.",
-                "ja_JP": "Experimental content for multibakery.",
-                "ko_KR": "Experimental content for multibakery."
+                "en_US": "Gameplay content and maps designed for Multibakery.",
+                "de_DE": "Gameplay content and maps designed for Multibakery.",
+                "fr_FR": "Gameplay content and maps designed for Multibakery.",
+                "zh_CN": "Gameplay content and maps designed for Multibakery.",
+                "zh_TW": "Gameplay content and maps designed for Multibakery.",
+                "ja_JP": "Gameplay content and maps designed for Multibakery.",
+                "ko_KR": "Gameplay content and maps designed for Multibakery."
             },
             "icons": {
                 "24": "icon.png"
@@ -534,7 +534,7 @@
             ],
             "prestart": "prestart.js",
             "dependencies": {
-                "cc-multibakery": ">=0.8.11",
+                "cc-multibakery": ">=0.8.12",
                 "cc-alybox": ">=1.1.0",
                 "post-game": ">=1.4.0"
             }
@@ -542,16 +542,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.12.0.zip",
-                "source": "cc-multibakery-additions-0.12.0",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.13.1.zip",
+                "source": "cc-multibakery-additions-0.13.1",
                 "hash": {
-                    "sha256": "1b0c85d386d81d8d74f718a1400e45d1a1ec46fb21cad4b6eea8c2cc9552e43e"
+                    "sha256": "505504637c38bee5e937a8b80350e3bd8214d26ca1fff6ab6aaea25068c9e998"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1794665620000,
+        "lastUpdateTimestamp": 1795048003000,
         "releasePages": [
+            {
+                "body": "## 0.13.1 (11/18/2026)\r\n### Fixes\r\n- Fixed a missing water tile behind a cliff in map g.room-nw6",
+                "version": "0.13.1",
+                "timestamp": 1795048003000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.13.1"
+            },
+            {
+                "body": "## 0.13.0 (11/18/2026)\r\n### General\r\n- Bumped multibakery minimum dependency version to 0.8.12\r\n- Updated mod description in ccmod.json\r\n### New Content\r\n- Added map: co-op-dng/nw/g/room-nw6\r\n- Added effects mba-custom.earthquakeNW6 and mba-custom.hillkatBurrow\r\n- Patched enemies/rhombus/meerkat-car to add a new state and behaviors in which it acts like a proper enemy\r\n### Changes\r\n- Additional decoration for map g.room-nw5\r\n  * Added extra cliff details\r\n  * Added extra ball plants\r\n  * Added stone detailing to left-1 exit\r\n- Added option to spawn rhombus/meerkat-car enemies in map mba-testing",
+                "version": "0.13.0",
+                "timestamp": 1795046114000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.13.0"
+            },
             {
                 "body": "## 0.12.0 (11/14/2026)\r\n### New Content\r\n- Added pvp map: multibakery.pvp.co-op-room-3\r\n- Added map: co-op-dng/nw/g/room-nw5\r\n- Added map editor support for co-op-outer style: \\map-editor\\map-styles.json\r\n- Added co-op-outer files for fence props and fence scale-props\r\n### Changes\r\n- Added moving shadows under the northeast platforms in map g.room-nw11\r\n- Adjusted door sprites in co-op-outer style to match the back wall color of the co-op-fungeon-outer tileset\r\n- Unified south-facing doorframe sprite color to use dark variant for co-op-outer style\r\n### Fixes\r\n- Added tile gap in wall behind door d2 in map g.room-nw11\r\n- Changed wallY from 0 to 1 for short stone walls in map mba-outdoors (fixes layering issue when player intersects while pulling block)",
                 "version": "0.12.0",
