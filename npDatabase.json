@@ -500,7 +500,7 @@
     "cc-multibakery-additions": {
         "metadataCCMod": {
             "id": "cc-multibakery-additions",
-            "version": "0.13.1",
+            "version": "0.13.2",
             "title": {
                 "en_US": "Multibakery Additions",
                 "de_DE": "Multibakery Additions",
@@ -542,16 +542,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.13.1.zip",
-                "source": "cc-multibakery-additions-0.13.1",
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/archive/refs/tags/0.13.2.zip",
+                "source": "cc-multibakery-additions-0.13.2",
                 "hash": {
-                    "sha256": "505504637c38bee5e937a8b80350e3bd8214d26ca1fff6ab6aaea25068c9e998"
+                    "sha256": "7bc4dd3abc966123bca513d16a9b8eb11f18601b74a3d23c0f9725574a3ef0ff"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1795048003000,
+        "lastUpdateTimestamp": 1795275412000,
         "releasePages": [
+            {
+                "body": "## 0.13.2 (11/21/2026)\r\n### New Content\r\n- Added map: co-op-dng/nw/g/room-nw7 (incomplete)",
+                "version": "0.13.2",
+                "timestamp": 1795275412000,
+                "url": "https://github.com/XenonA7/cc-multibakery-additions/releases/tag/0.13.2"
+            },
             {
                 "body": "## 0.13.1 (11/18/2026)\r\n### Fixes\r\n- Fixed a missing water tile behind a cliff in map g.room-nw6",
                 "version": "0.13.1",
