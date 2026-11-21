@@ -250,7 +250,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.12",
+            "version": "0.8.13",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -275,16 +275,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.12/cc-multibakery-0.8.12.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.13/cc-multibakery-0.8.13.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "110974a557de037d53d2c7020cbbebcb478df07777e09a6b52d360ec08a303d2"
+                    "sha256": "9974834ec35466fefba03ddc206b2717ba59d378ef8a73bbbd3fe9e0d0fe1208"
                 }
             }
         ],
         "stars": 13,
-        "lastUpdateTimestamp": 1795037903000,
+        "lastUpdateTimestamp": 1795285865000,
         "releasePages": [
+            {
+                "body": "\n### Fixed\n\n- Fix https server support",
+                "version": "0.8.13",
+                "timestamp": 1795285866000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.13"
+            },
             {
                 "body": "\n### Added\n\n- Add `ig.ENTITY.TeslaCoil` remote state\n- Add elevator support\n\n### Fixed\n\n- Fixed crash on Hexacast lvl 2 neutral throw art Arcane Volley\n- Fix remote map menu world view not being enterable\n- Fix `ig.ENTITY.TeslaCoil` crash on activate\n- Remove ARBox'es that target entities from previous map when switching to a new map",
                 "version": "0.8.12",
