@@ -257,7 +257,7 @@
     "cc-multibakery": {
         "metadataCCMod": {
             "id": "cc-multibakery",
-            "version": "0.8.13",
+            "version": "0.8.14",
             "title": "Multibakery",
             "description": "Online multiplayer and split-screen co-op mod for CrossCode!",
             "repository": "https://github.com/krypciak/cc-multibakery",
@@ -272,7 +272,7 @@
             },
             "dependencies": {
                 "crosscode": ">=1.4.0",
-                "cc-instanceinator": ">=1.1.8",
+                "cc-instanceinator": ">=1.1.9",
                 "nax-ccuilib": ">=1.5.8",
                 "ccmodmanager": ">=1.2.1",
                 "cc-krypek-lib": ">=1.4.1"
@@ -282,16 +282,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.13/cc-multibakery-0.8.13.ccmod",
+                "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.14/cc-multibakery-0.8.14.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "9974834ec35466fefba03ddc206b2717ba59d378ef8a73bbbd3fe9e0d0fe1208"
+                    "sha256": "aaee80485291715c8a39fdb7b287dec5716759f1e05f88b8faca8e4aa43f9afd"
                 }
             }
         ],
         "stars": 13,
-        "lastUpdateTimestamp": 1795285865000,
+        "lastUpdateTimestamp": 1795716877000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add `ig.ENTITY.Elevator` remote state\n\n### Fixed\n\n- Fix player.name feature of cc-alybox always beaing Lea (sitting fix)\n- Fix extern anims for non Lea not displaying on remote\n- Fix same repeated extern anims not displaying on remote\n- Fix remote wave teleport transition not working when there is more than 1 remote player\n- Fix crash on party menu enter while using gamepad\n- Fix crash on bounce switch hit\n- Fix killed entities spawning show effects on remote map join\n- Fix some entities playing hide effect on map join on remote\n- Fix non standard global variables not getting sent to remote\n- Fix `ig.ENTITY.RegenDestruct` behaving glithy on remote\n- Fix quick menu map button staying disabled after cutscene ends requiring a quick menu reopen\n- Fix remote element hud glithing after switching elements multiple times on high latency\n- Fix enemies not having any attribs after joining a remote server and then loading a local save\n- Fix music reseting on each map switch on remote",
+                "version": "0.8.14",
+                "timestamp": 1795716878000,
+                "url": "https://github.com/krypciak/cc-multibakery/releases/tag/v0.8.14"
+            },
             {
                 "body": "\n### Fixed\n\n- Fix https server support",
                 "version": "0.8.13",

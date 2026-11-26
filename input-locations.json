@@ -1,5 +1,5 @@
 {
-    "cc-multibakery": { "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.13/cc-multibakery-0.8.13.ccmod", "source": "" },
+    "cc-multibakery": { "url": "https://github.com/krypciak/cc-multibakery/releases/download/v0.8.14/cc-multibakery-0.8.14.ccmod", "source": "" },
     "cc-instanceinator": { "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.9/cc-instanceinator-1.1.9.ccmod", "source": "" },
     "cc-variable-charge-time": { "url": "https://github.com/krypciak/cc-variable-charge-time/releases/download/v1.0.0/cc-variable-charge-time-1.0.0.ccmod" },
     "cc-krypek-lib": { "url": "https://github.com/krypciak/cc-krypek-lib/releases/download/v1.4.1/cc-krypek-lib-1.4.1.ccmod" },
