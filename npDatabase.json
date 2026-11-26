@@ -2,7 +2,7 @@
     "cc-instanceinator": {
         "metadataCCMod": {
             "id": "cc-instanceinator",
-            "version": "1.1.8",
+            "version": "1.1.9",
             "title": "Instanceinator",
             "description": "CrossCode instance creator",
             "repository": "https://github.com/krypciak/cc-instanceinator",
@@ -23,15 +23,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.8/cc-instanceinator-1.1.8.ccmod",
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/download/v1.1.9/cc-instanceinator-1.1.9.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "89e4972a265c972ec9b68c3650f791f19ad52156a8931da1c2461a8f745a1dbd"
+                    "sha256": "78cfa6001b2ba78d25e8ab598bac1bf661fe2748ba47ac489f45c28999b4c894"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1794251915000,
+        "lastUpdateTimestamp": 1795716690000,
         "releasePages": [
+            {
+                "body": "\n### Fixed\n\n- On instance destroy only clear cache of objects owned by the instance and not all objects",
+                "version": "1.1.9",
+                "timestamp": 1795716692000,
+                "url": "https://github.com/krypciak/cc-instanceinator/releases/tag/v1.1.9"
+            },
             {
                 "body": "\n### Added\n\n- Add instance label for displaying map name (disabled by default)\n\n### Fixed\n\n- Fix sc.savePreset missing on copied instances",
                 "version": "1.1.8",
